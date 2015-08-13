@@ -1,10 +1,15 @@
 PODS:
+  - Groot (1.0.1):
+    - Groot/Swift (= 1.0.1)
+  - Groot/Swift (1.0.1)
   - THLabel (1.4.6)
 
 DEPENDENCIES:
+  - Groot
   - THLabel (~> 1.4.6)
 
 SPEC CHECKSUMS:
+  Groot: 8bcac9a812ccac7545bb6f515639acfbb5e7c1ca
   THLabel: 27890d10123514ffe74b6e023b57b2ece55304af
 
 COCOAPODS: 0.37.2

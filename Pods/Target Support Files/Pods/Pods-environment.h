@@ -6,6 +6,18 @@
 // project.
 
 
+// Groot
+#define COCOAPODS_POD_AVAILABLE_Groot
+#define COCOAPODS_VERSION_MAJOR_Groot 1
+#define COCOAPODS_VERSION_MINOR_Groot 0
+#define COCOAPODS_VERSION_PATCH_Groot 1
+
+// Groot/Swift
+#define COCOAPODS_POD_AVAILABLE_Groot_Swift
+#define COCOAPODS_VERSION_MAJOR_Groot_Swift 1
+#define COCOAPODS_VERSION_MINOR_Groot_Swift 0
+#define COCOAPODS_VERSION_PATCH_Groot_Swift 1
+
 // THLabel
 #define COCOAPODS_POD_AVAILABLE_THLabel
 #define COCOAPODS_VERSION_MAJOR_THLabel 1

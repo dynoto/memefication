@@ -6,10 +6,7 @@
 //  Copyright (c) 2015 David Tjokroaminoto. All rights reserved.
 //
 
-#import "AppDelegate.h"
 #import "MainCollectionViewController.h"
-#import "MemeCollectionViewCell.h"
-#import "MemeCreateViewController.h"
 
 @interface MainCollectionViewController ()
 
@@ -24,8 +21,8 @@ static NSString * const reuseIdentifier = @"MemeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self saveMemeImage];
-    [self getMemeImage];
+    _imageList = [MemeHelper getMemeImageList];
+    [MemeHelper saveMemeImage:@"Not Sure If" memeImageName:@"not-sure-if"];
     [self resizeCollectionView];
     [self addSearchBar];
     
@@ -154,45 +151,6 @@ static NSString * const reuseIdentifier = @"MemeCell";
     _selectedImage = vc.memeImage.image;
     
     [self performSegueWithIdentifier:@"segueMemeListToCreate" sender:self];
-}
-
-#pragma mark CoreData
-- (void)getMemeImage {
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    
-    // MOC is like getting the database, in this case from AppDelegate
-    NSManagedObjectContext *moc = [delegate managedObjectContext];
-    
-    // Entity description is similar to selecting "table"
-    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
-    
-    // Create a fetch request, set the entity is like pointing to the database table
-    NSFetchRequest *req = [[NSFetchRequest alloc] init];
-    [req setEntity:ed];
-    
-    // similar to SQL query "where"
-    // NSPredicate *pred = [NSPredicate predicateWithFormat:@"(name = %@)",@"troll"];
-    // [req setPredicate:pred];
-    
-    _imageList = [moc executeFetchRequest:req error:nil];
-}
-
-- (void)saveMemeImage {
-    
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    
-    // MOC is like getting the database, in this case from AppDelegate
-    NSManagedObjectContext *moc = [delegate managedObjectContext];
-    
-    // Entity description is similar to selecting "table"
-    // NSManagedObject is for "saving" file
-    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
-    NSManagedObject *mo = [[NSManagedObject alloc] initWithEntity:ed insertIntoManagedObjectContext:moc];
-    
-    [mo setValue:@"Confession Bear" forKey:@"name"];
-    [mo setValue:@"confession-bear" forKey:@"image_name"];
-    [moc save:nil];
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

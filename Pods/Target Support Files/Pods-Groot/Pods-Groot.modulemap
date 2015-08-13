@@ -1,0 +1,12 @@
+framework module Groot {
+  umbrella header "Pods-Groot-umbrella.h"
+
+  export *
+  module * { export * }
+
+  private header "GRTValueTransformer.h"
+  private header "NSAttributeDescription+Groot.h"
+  private header "NSEntityDescription+Groot.h"
+  private header "NSManagedObject+Groot.h"
+  private header "NSPropertyDescription+Groot.h"
+}

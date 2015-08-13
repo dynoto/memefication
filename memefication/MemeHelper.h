@@ -11,8 +11,11 @@
 
 @interface MemeHelper : NSObject
 
-- (UIColor*) getIosColor;
-- (void) getScreenSize;
-
+//- (UIColor*) getIosColor;
+//- (void) getScreenSize;
++ (void) batchUpdateMemeDataFromJson;
++ (void) clearMemeImageData;
++ (void) saveMemeImage:(NSString *)memeName memeImageName:(NSString *)memeImageName;
++ (NSArray*) getMemeImageList;
 
 @end

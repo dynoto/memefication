@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <THLabel.h>
+#import "THLabel.h"
 
 @interface MemeCollectionViewCell : UICollectionViewCell
 

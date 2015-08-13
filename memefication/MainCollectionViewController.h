@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MemeCollectionViewCell.h"
+#import "MemeCreateViewController.h"
+#import "MemeHelper.h"
 
 @interface MainCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate>
 

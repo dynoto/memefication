@@ -18,7 +18,7 @@
         <scene sceneID="GS2-Os-Rqr">
             <objects>
                 <navigationController navigationBarHidden="YES" id="8vr-Yi-YGf" userLabel="Main Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Memes" image="first" id="2Wd-Tg-HUp"/>
+                    <tabBarItem key="tabBarItem" title="Create" image="plus-icon" id="2Wd-Tg-HUp"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="64x-o7-Ka6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -39,7 +39,7 @@
         <scene sceneID="mi8-V2-2JB">
             <objects>
                 <navigationController navigationBarHidden="YES" id="gaD-6G-F0S" userLabel="Favourite Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Gxx-xd-oQ4"/>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="love-icon" id="Gxx-xd-oQ4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ND1-gG-MZX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -56,7 +56,7 @@
         <scene sceneID="VCd-mx-Qhr">
             <objects>
                 <navigationController navigationBarHidden="YES" id="3rm-SV-ftB" userLabel="Favourite Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="first" id="aTq-5E-GXR"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings-icon" id="aTq-5E-GXR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HFW-Gy-Xml">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -281,9 +281,6 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-Jg-AWc">
                                 <rect key="frame" x="16" y="479" width="135" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="cXz-Jg-AWc" secondAttribute="height" multiplier="135:34" id="whW-iv-j9o"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.074509803921568626" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -294,9 +291,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5f-O7-APr">
                                 <rect key="frame" x="169" y="479" width="135" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="S5f-O7-APr" secondAttribute="height" multiplier="135:34" id="7an-HG-t0K"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Create">
                                     <color key="titleColor" red="0.074509803921568626" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -313,7 +307,7 @@
                                     <action selector="createAction:" destination="QPl-i9-Hy7" eventType="touchUpInside" id="qVW-qW-BMK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXT IT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssv-ms-qj0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEME IT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssv-ms-qj0">
                                 <rect key="frame" x="85" y="20" width="150" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ssv-ms-qj0" secondAttribute="height" multiplier="46:11" constant="-34" id="va2-pH-c8R"/>
@@ -385,7 +379,8 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-6n-nUH">
                                 <rect key="frame" x="93" y="477" width="135" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="qY9-6n-nUH" secondAttribute="height" multiplier="135:34" id="1lr-jV-SXj"/>
+                                    <constraint firstAttribute="height" constant="34" id="4xT-74-E3h"/>
+                                    <constraint firstAttribute="width" constant="135" id="HNq-VJ-MBx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Done">
@@ -454,7 +449,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="love-icon" width="30" height="30"/>
+        <image name="plus-icon" width="30" height="30"/>
+        <image name="settings-icon" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
