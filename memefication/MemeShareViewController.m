@@ -34,16 +34,33 @@
 
 - (void)prepareUI {
     UIColor *blueColor = [UIColor colorWithRed:19/255.0 green:144/255.0 blue:255/255.0 alpha:1.0];
-    _memeImage.layer.borderWidth = 0.8f;
-    _memeImage.layer.borderColor = [[UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0] CGColor];
+    _memeImage.layer.borderWidth = 4.0f;
+    _memeImage.layer.borderColor = [[UIColor colorWithRed:255/255.0 green:71/255.0 blue:19/255.0 alpha:1.0] CGColor];
     
-    _doneButton.layer.cornerRadius  = 5;
-    _doneButton.layer.borderWidth   = 1.0f;
-    _doneButton.layer.borderColor   = [blueColor CGColor];
+    
+    _doneButton = [MemeHelper addButtonRadius:_doneButton color:nil];
+    _shareButton = [MemeHelper addButtonRadius:_shareButton color:nil];
+    
+    
 }
 
 - (void)doneAction:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:TRUE];
+}
+
+- (IBAction)socialShareAction:(id)sender {
+    NSString *tempImagePath = [NSTemporaryDirectory() stringByAppendingString:@"image.jpg"];
+    NSData *imageData = UIImageJPEGRepresentation(_memeImage.image, 100);
+    
+    [imageData writeToFile:tempImagePath atomically:true];
+    NSURL *imageURL = [NSURL fileURLWithPath:tempImagePath];
+    
+    _docController = [UIDocumentInteractionController interactionControllerWithURL:imageURL];
+    _docController.delegate = self;
+    _docController.annotation = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"This is the users caption that will be displayed in Instagram"], @"InstagramCaption", nil];
+    _docController.UTI = @"com.instagram.exclusivegram";
+    [_docController presentOpenInMenuFromRect:CGRectMake(1, 1, 1, 1) inView:self.view animated:YES];
+    NSLog(@"Sharing in progress");
 }
 
 

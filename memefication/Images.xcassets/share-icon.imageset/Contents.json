@@ -3,17 +3,16 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "In Love-30.png"
+      "filename" : "share-icon-1.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "In Love-50.png"
+      "filename" : "share-icon.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "In Love-50-1.png"
+      "scale" : "3x"
     }
   ],
   "info" : {

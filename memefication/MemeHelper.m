@@ -88,6 +88,17 @@
     
 }
 
++ (UIButton *) addButtonRadius:(UIButton *)button color:(CGColorRef)color {
+    if (color == nil) {
+        color = [[UIColor colorWithRed:19/255.0 green:144/255.0 blue:255/255.0 alpha:1.0] CGColor];
+    }
+    
+    button.layer.cornerRadius = 6.25;
+    button.layer.borderWidth  = 1.0f;
+    button.layer.borderColor  = color;
+    return button;
+}
+
 
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
 #import "THLabel.h"
+#import "MemeHelper.h"
 
 @interface MemeCreateViewController : UIViewController <UITextFieldDelegate>
 

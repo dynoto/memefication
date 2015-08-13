@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -7,6 +7,10 @@
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Impact.ttf">
+            <string>Impact</string>
+            <string>Impact</string>
+            <string>Impact</string>
+            <string>Impact</string>
             <string>Impact</string>
             <string>Impact</string>
             <string>Impact</string>
@@ -281,7 +285,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-Jg-AWc">
                                 <rect key="frame" x="16" y="479" width="135" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.074509803921568626" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -291,9 +295,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5f-O7-APr">
                                 <rect key="frame" x="169" y="479" width="135" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.47450980390000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
                                 <state key="normal" title="Create">
-                                    <color key="titleColor" red="0.074509803921568626" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -377,12 +382,8 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-6n-nUH">
-                                <rect key="frame" x="93" y="477" width="135" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="4xT-74-E3h"/>
-                                    <constraint firstAttribute="width" constant="135" id="HNq-VJ-MBx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <rect key="frame" x="16" y="477" width="135" height="34"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.074509803920000006" green="0.47450980390000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -392,24 +393,33 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHARE IT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHf-RH-j5z">
                                 <rect key="frame" x="85" y="20" width="150" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GHf-RH-j5z" secondAttribute="height" multiplier="75:22" id="F7V-7f-PeT"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="36"/>
                                 <color key="textColor" red="1" green="0.27843137254901962" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxO-t2-KpK">
+                                <rect key="frame" x="169" y="477" width="135" height="34"/>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.47450980392156861" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
+                                <state key="normal" title="SHARE"/>
+                                <connections>
+                                    <action selector="socialShareAction:" destination="Gsm-Ym-f2w" eventType="touchUpInside" id="XY1-X0-omA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xff-2y-MvB" firstAttribute="top" secondItem="qY9-6n-nUH" secondAttribute="bottom" constant="8" id="K0v-C1-RCP"/>
                             <constraint firstAttribute="trailing" secondItem="GHf-RH-j5z" secondAttribute="trailing" constant="85" id="M5M-y7-TeZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qY9-6n-nUH" secondAttribute="trailing" constant="76" id="NL9-ux-cjU"/>
+                            <constraint firstItem="qY9-6n-nUH" firstAttribute="leading" secondItem="3Xm-dp-5Ds" secondAttribute="leading" constant="16" id="Qb4-LJ-fd0"/>
                             <constraint firstItem="nwV-hU-NLW" firstAttribute="trailing" secondItem="3Xm-dp-5Ds" secondAttribute="trailingMargin" id="Ssp-Wr-bmu"/>
                             <constraint firstItem="nwV-hU-NLW" firstAttribute="top" secondItem="Wh8-CJ-pyg" secondAttribute="bottom" constant="52" id="Uiq-j6-eua"/>
                             <constraint firstItem="GHf-RH-j5z" firstAttribute="top" secondItem="Wh8-CJ-pyg" secondAttribute="bottom" id="Vse-Hv-G0a"/>
-                            <constraint firstItem="xff-2y-MvB" firstAttribute="top" secondItem="qY9-6n-nUH" secondAttribute="bottom" constant="8" id="WeI-YJ-AWp"/>
+                            <constraint firstItem="mxO-t2-KpK" firstAttribute="leading" secondItem="qY9-6n-nUH" secondAttribute="trailing" constant="18" id="a3e-fv-g2i"/>
                             <constraint firstItem="nwV-hU-NLW" firstAttribute="leading" secondItem="3Xm-dp-5Ds" secondAttribute="leadingMargin" id="i9S-pO-mcQ"/>
-                            <constraint firstItem="qY9-6n-nUH" firstAttribute="leading" secondItem="3Xm-dp-5Ds" secondAttribute="leadingMargin" constant="77" id="ndW-2e-FgH"/>
+                            <constraint firstItem="xff-2y-MvB" firstAttribute="top" secondItem="mxO-t2-KpK" secondAttribute="bottom" constant="8" id="lDV-hx-pLm"/>
+                            <constraint firstAttribute="trailing" secondItem="mxO-t2-KpK" secondAttribute="trailing" constant="16" id="nlG-gY-vTR"/>
+                            <constraint firstItem="mxO-t2-KpK" firstAttribute="width" secondItem="qY9-6n-nUH" secondAttribute="width" id="qmy-9D-Kst"/>
                             <constraint firstItem="GHf-RH-j5z" firstAttribute="leading" secondItem="3Xm-dp-5Ds" secondAttribute="leading" constant="85" id="zvq-8H-xCQ"/>
                         </constraints>
                     </view>
@@ -417,6 +427,7 @@
                     <connections>
                         <outlet property="doneButton" destination="qY9-6n-nUH" id="3eL-uP-YBM"/>
                         <outlet property="memeImage" destination="nwV-hU-NLW" id="hdn-wy-NDK"/>
+                        <outlet property="shareButton" destination="mxO-t2-KpK" id="TVD-Kc-eal"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9d-S6-AbK" userLabel="First Responder" sceneMemberID="firstResponder"/>

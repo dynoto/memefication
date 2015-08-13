@@ -115,7 +115,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-    NSLog(@"Search for something");
+
 }
 
 #pragma mark <UICollectionViewDelegate>

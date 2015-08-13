@@ -52,7 +52,8 @@
 }
 
 - (void)textChanged:(UITextField *)textField {
-    UILabel *label = (textField.tag == 100) ? _memeTopLabel : _memeBottomLabel;
+    THLabel *label = (textField.tag == 100) ? _memeTopLabel : _memeBottomLabel;
+    
     label.text = [textField.text uppercaseString];
 }
 
@@ -75,13 +76,8 @@
     _memeImageView.layer.borderWidth = 0.8f;
     _memeImageView.layer.borderColor = [[UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0] CGColor];
     
-    _backButton.layer.cornerRadius  = 5;
-    _backButton.layer.borderWidth   = 1.0f;
-    _backButton.layer.borderColor   = [blueColor CGColor];
-    
-    _createButton.layer.cornerRadius    = _backButton.layer.cornerRadius;
-    _createButton.layer.borderWidth     = _backButton.layer.borderWidth;
-    _createButton.layer.borderColor     = _backButton.layer.borderColor;
+    _backButton = [MemeHelper addButtonRadius:_backButton color:nil];
+    _createButton = [MemeHelper addButtonRadius:_createButton color:nil];
 }
 
 - (void)mergeLabelWithImage {
@@ -96,12 +92,11 @@
     [_memeBottomLabel.layer renderInContext:UIGraphicsGetCurrentContext()];
     _renderedImage = UIGraphicsGetImageFromCurrentImageContext();
     
-    UIImageWriteToSavedPhotosAlbum(_renderedImage, nil, nil, nil);
+//    UIImageWriteToSavedPhotosAlbum(_renderedImage, nil, nil, nil);
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [self mergeLabelWithImage];
-    NSLog(@"%f, %f",_renderedImage.size.width, _renderedImage.size.height);
     
     if ([segue.destinationViewController respondsToSelector:@selector(setRenderedImage:)]) {
         [segue.destinationViewController performSelector:@selector(setRenderedImage:) withObject:_renderedImage];
