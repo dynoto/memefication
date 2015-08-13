@@ -1,0 +1,10 @@
+PODS:
+  - THLabel (1.4.6)
+
+DEPENDENCIES:
+  - THLabel (~> 1.4.6)
+
+SPEC CHECKSUMS:
+  THLabel: 27890d10123514ffe74b6e023b57b2ece55304af
+
+COCOAPODS: 0.37.2
