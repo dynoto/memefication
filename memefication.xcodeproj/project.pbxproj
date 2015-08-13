@@ -23,6 +23,7 @@
 		DCB7493B1B7CC16700D9FA5A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DCB7493A1B7CC16700D9FA5A /* Podfile */; };
 		DCE8C6D31B7CC4F1001959D2 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE8C6D21B7CC4E1001959D2 /* Impact.ttf */; };
 		DCE8C6D41B7CC4F2001959D2 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE8C6D21B7CC4E1001959D2 /* Impact.ttf */; };
+		DCE8C6D71B7CCE00001959D2 /* MemeShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8C6D61B7CCE00001959D2 /* MemeShareViewController.m */; };
 		F3C6D53AF9180EBE568F3AC3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA12F8E542A4ADFB215F207C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		DC79E0E71B7A7A7100E586AE /* MemeCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeCreateViewController.m; sourceTree = "<group>"; };
 		DCB7493A1B7CC16700D9FA5A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		DCE8C6D21B7CC4E1001959D2 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
+		DCE8C6D51B7CCE00001959D2 /* MemeShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeShareViewController.h; sourceTree = "<group>"; };
+		DCE8C6D61B7CCE00001959D2 /* MemeShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeShareViewController.m; sourceTree = "<group>"; };
 		EA12F8E542A4ADFB215F207C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +143,8 @@
 				DC2C56BB1B79FE5A0030B2F6 /* MainCollectionViewController.m */,
 				DC79E0E61B7A7A7100E586AE /* MemeCreateViewController.h */,
 				DC79E0E71B7A7A7100E586AE /* MemeCreateViewController.m */,
+				DCE8C6D51B7CCE00001959D2 /* MemeShareViewController.h */,
+				DCE8C6D61B7CCE00001959D2 /* MemeShareViewController.m */,
 				DCB7493A1B7CC16700D9FA5A /* Podfile */,
 				DC2C569E1B79FD670030B2F6 /* Main.storyboard */,
 				DC2C56BD1B7A009B0030B2F6 /* MemeCollectionViewCell.h */,
@@ -318,6 +323,7 @@
 			files = (
 				DC0A6A9B1B7B97E40048F108 /* memefication.xcdatamodeld in Sources */,
 				DC2C56C01B7A009B0030B2F6 /* MemeCollectionViewCell.m in Sources */,
+				DCE8C6D71B7CCE00001959D2 /* MemeShareViewController.m in Sources */,
 				DC2C56BC1B79FE5A0030B2F6 /* MainCollectionViewController.m in Sources */,
 				DC2C56971B79FD670030B2F6 /* AppDelegate.m in Sources */,
 				DC2C56941B79FD670030B2F6 /* main.m in Sources */,

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <THLabel.h>
 
 @interface MemeCollectionViewCell : UICollectionViewCell
 
-@property (strong, nonatomic) IBOutlet UILabel *memeLabel;
+@property (strong, nonatomic) IBOutlet THLabel *memeLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *memeImage;
 @property (strong, nonatomic) NSString *memeID;
 

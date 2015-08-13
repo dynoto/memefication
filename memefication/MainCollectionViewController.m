@@ -24,7 +24,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self saveMemeImage];
+//    [self saveMemeImage];
     [self getMemeImage];
     [self resizeCollectionView];
     [self addSearchBar];
@@ -178,6 +178,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
 }
 
 - (void)saveMemeImage {
+    
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
     // MOC is like getting the database, in this case from AppDelegate
@@ -188,8 +189,8 @@ static NSString * const reuseIdentifier = @"MemeCell";
     NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
     NSManagedObject *mo = [[NSManagedObject alloc] initWithEntity:ed insertIntoManagedObjectContext:moc];
     
-    [mo setValue:@"Insanity Wolf" forKey:@"name"];
-    [mo setValue:@"insanity-wolf" forKey:@"image_name"];
+    [mo setValue:@"Confession Bear" forKey:@"name"];
+    [mo setValue:@"confession-bear" forKey:@"image_name"];
     [moc save:nil];
     
 }

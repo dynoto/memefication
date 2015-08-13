@@ -11,6 +11,7 @@
 @interface MainCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionReusableView *collectionViewHeader;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 
