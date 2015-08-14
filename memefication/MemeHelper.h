@@ -17,6 +17,6 @@
 + (void) clearMemeImageData;
 + (void) saveMemeImage:(NSString *)memeName memeImageName:(NSString *)memeImageName;
 + (NSArray*) getMemeImageList;
-+ (UIButton *) addButtonRadius:(UIButton *)button color:(CGColorRef)color;
++ (UIButton *) addRadius:(UIButton *)button color:(CGColorRef)color;
 
 @end

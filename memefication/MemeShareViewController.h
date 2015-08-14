@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Social/Social.h"
-#import "MemeHelper.h";
+#import "MemeHelper.h"
 
 @interface MemeShareViewController : UIViewController <UIDocumentInteractionControllerDelegate>
 

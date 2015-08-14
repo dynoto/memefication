@@ -88,7 +88,7 @@
     
 }
 
-+ (UIButton *) addButtonRadius:(UIButton *)button color:(CGColorRef)color {
++ (UIButton *) addRadius:(UIButton *)button color:(CGColorRef)color {
     if (color == nil) {
         color = [self getColor:@"blue"];
     }
