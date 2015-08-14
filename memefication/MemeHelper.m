@@ -90,13 +90,23 @@
 
 + (UIButton *) addButtonRadius:(UIButton *)button color:(CGColorRef)color {
     if (color == nil) {
-        color = [[UIColor colorWithRed:19/255.0 green:144/255.0 blue:255/255.0 alpha:1.0] CGColor];
+        color = [self getColor:@"blue"];
     }
     
     button.layer.cornerRadius = 6.25;
     button.layer.borderWidth  = 1.0f;
     button.layer.borderColor  = color;
     return button;
+}
+
++ (CGColorRef) getColor:(NSString *)color {
+    if ([color  isEqualToString:@"red"]) {
+        return [[UIColor colorWithRed:255/255.0 green:71/255.0 blue:19/255.0 alpha:1.0] CGColor];
+    }else if ([color isEqualToString:@"blue"]){
+        return [[UIColor colorWithRed:19/255.0 green:144/255.0 blue:255/255.0 alpha:1.0] CGColor];
+    }else {
+        return nil;
+    }
 }
 
 

@@ -33,13 +33,11 @@
 }
 
 - (void)prepareUI {
-    UIColor *blueColor = [UIColor colorWithRed:19/255.0 green:144/255.0 blue:255/255.0 alpha:1.0];
-    _memeImage.layer.borderWidth = 4.0f;
-    _memeImage.layer.borderColor = [[UIColor colorWithRed:255/255.0 green:71/255.0 blue:19/255.0 alpha:1.0] CGColor];
-    
+    _memeImage.layer.borderWidth = 2.0f;
+    _memeImage.layer.borderColor = [MemeHelper getColor:@"red"];
     
     _doneButton = [MemeHelper addButtonRadius:_doneButton color:nil];
-    _shareButton = [MemeHelper addButtonRadius:_shareButton color:nil];
+    _shareButton = [MemeHelper addButtonRadius:_shareButton color:[MemeHelper getColor:@"red"]];
     
     
 }
@@ -60,7 +58,6 @@
     _docController.annotation = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"This is the users caption that will be displayed in Instagram"], @"InstagramCaption", nil];
     _docController.UTI = @"com.instagram.exclusivegram";
     [_docController presentOpenInMenuFromRect:CGRectMake(1, 1, 1, 1) inView:self.view animated:YES];
-    NSLog(@"Sharing in progress");
 }
 
 

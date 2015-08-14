@@ -77,7 +77,7 @@
     _memeImageView.layer.borderColor = [[UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0] CGColor];
     
     _backButton = [MemeHelper addButtonRadius:_backButton color:nil];
-    _createButton = [MemeHelper addButtonRadius:_createButton color:nil];
+    _createButton = [MemeHelper addButtonRadius:_createButton color:[MemeHelper getColor:@"red"]];
 }
 
 - (void)mergeLabelWithImage {
@@ -101,6 +101,15 @@
     if ([segue.destinationViewController respondsToSelector:@selector(setRenderedImage:)]) {
         [segue.destinationViewController performSelector:@selector(setRenderedImage:) withObject:_renderedImage];
     }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField.tag == 100) {
+        [_memeBottomText becomeFirstResponder];
+    } else {
+        [textField resignFirstResponder];
+    }
+    return YES;
 }
 
 @end
