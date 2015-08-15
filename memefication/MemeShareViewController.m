@@ -33,9 +33,6 @@
 }
 
 - (void)prepareUI {
-    _memeImage.layer.borderWidth = 2.0f;
-    _memeImage.layer.borderColor = [MemeHelper getColor:@"red"];
-    
     _doneButton = [MemeHelper addRadius:_doneButton color:nil];
     _shareButton = [MemeHelper addRadius:_shareButton color:[MemeHelper getColor:@"red"]];
     

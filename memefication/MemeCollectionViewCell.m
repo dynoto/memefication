@@ -15,7 +15,7 @@
     self = [super initWithFrame:CGRectMake(0, 0, screenSize.size.width*0.5, screenSize.size.width*0.5)];
     
     _memeLabel = [[THLabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
-    _memeLabel.font = [UIFont fontWithName:@"Impact" size:24.0];
+    _memeLabel.font = [UIFont fontWithName:@"Impact" size:18.0];
     _memeLabel.textColor = [UIColor whiteColor];
     _memeLabel.strokeSize = 2.0f;
     _memeLabel.strokeColor = [UIColor blackColor];

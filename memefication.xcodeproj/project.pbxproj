@@ -10,6 +10,7 @@
 		9CAE71CAFBF16E07DC107627 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81555CEA181E206F2374C2F4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DC0A6A631B7B97140048F108 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0A6A621B7B97140048F108 /* CoreData.framework */; };
 		DC0A6A9B1B7B97E40048F108 /* memefication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC0A6A991B7B97E40048F108 /* memefication.xcdatamodeld */; };
+		DC1D11CF1B7E5354004E48F8 /* MemeData.json in Resources */ = {isa = PBXBuildFile; fileRef = DCE8C6D81B7D0124001959D2 /* MemeData.json */; };
 		DC2873FC1B7D106200EEEF87 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2873FB1B7D106200EEEF87 /* Social.framework */; };
 		DC2C56941B79FD670030B2F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C56931B79FD670030B2F6 /* main.m */; };
 		DC2C56971B79FD670030B2F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C56961B79FD670030B2F6 /* AppDelegate.m */; };
@@ -26,7 +27,6 @@
 		DCE8C6D31B7CC4F1001959D2 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE8C6D21B7CC4E1001959D2 /* Impact.ttf */; };
 		DCE8C6D41B7CC4F2001959D2 /* Impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE8C6D21B7CC4E1001959D2 /* Impact.ttf */; };
 		DCE8C6D71B7CCE00001959D2 /* MemeShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE8C6D61B7CCE00001959D2 /* MemeShareViewController.m */; };
-		DCE8C6D91B7D0124001959D2 /* MemeData.json in Resources */ = {isa = PBXBuildFile; fileRef = DCE8C6D81B7D0124001959D2 /* MemeData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,11 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC79E0E31B7A655300E586AE /* Images.xcassets in Resources */,
-				DCE8C6D91B7D0124001959D2 /* MemeData.json in Resources */,
 				DC2C56A01B79FD670030B2F6 /* Main.storyboard in Resources */,
 				DCB7493B1B7CC16700D9FA5A /* Podfile in Resources */,
 				DC79E0E51B7A656F00E586AE /* Media.xcassets in Resources */,
 				DCE8C6D31B7CC4F1001959D2 /* Impact.ttf in Resources */,
+				DC1D11CF1B7E5354004E48F8 /* MemeData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +514,7 @@
 				INFOPLIST_FILE = memeficationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memefication.app/memefication";
 			};
 			name = Debug;
@@ -529,6 +530,7 @@
 				INFOPLIST_FILE = memeficationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memefication.app/memefication";
 			};
 			name = Release;

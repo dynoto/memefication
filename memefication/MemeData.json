@@ -1,0 +1,64 @@
+{
+    "MemeImage": [
+                  {
+                  "identifier": 1,
+                  "name": "Insanity Wolf",
+                  "image_name": "insanity-wolf"
+                  },
+                  {
+                  "identifier": 2,
+                  "name": "Success Kid",
+                  "image_name": "success-kid"
+                  },
+                  {
+                  "identifier": 3,
+                  "name": "Ultra Gay",
+                  "image_name": "ultra-gay"
+                  },
+                  {
+                  "identifier": 4,
+                  "name": "Not Sure If",
+                  "image_name": "not-sure-if"
+                  },
+                  {
+                  "identifier": 5,
+                  "name": "Troll Face",
+                  "image_name": "troll-face"
+                  },
+                  {
+                  "identifier": 6,
+                  "name": "Confession Bear",
+                  "image_name": "confession-bear"
+                  },
+                  {
+                  "identifier": 7,
+                  "name": "Are You Kidding Me",
+                  "image_name": "are-you-kidding-me"
+                  },
+                  {
+                  "identifier": 8,
+                  "name": "X X Everywhere",
+                  "image_name": "x-x-everywhere"
+                  },
+                  {
+                  "identifier": 9,
+                  "name": "Yao Ming Face",
+                  "image_name": "yao-ming-face"
+                  },
+                  {
+                  "identifier": 10,
+                  "name": "Bad Luck Brian",
+                  "image_name": "bad-luck-brian"
+                  },
+                  {
+                  "identifier": 11,
+                  "name": "Baby Insanity",
+                  "image_name": "baby-insanity"
+                  },
+                  {
+                  "identifier": 12,
+                  "name": "Why The Fuck",
+                  "image_name": "why-the-fuck"
+                  }
+                  ]
+}

@@ -14,8 +14,9 @@
 //- (void) getScreenSize;
 + (CGColorRef) getColor:(NSString *)colorName;
 + (void) batchUpdateMemeDataFromJson;
++ (void) updateMemeJSON;
 + (void) clearMemeImageData;
-+ (void) saveMemeImage:(NSString *)memeName memeImageName:(NSString *)memeImageName;
++ (void) saveMemeImage:(NSString*)memeId memeImageName:(NSString *)memeImageName;
 + (NSArray*) getMemeImageList;
 + (UIButton *) addRadius:(UIButton *)button color:(CGColorRef)color;
 

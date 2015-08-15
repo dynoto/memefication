@@ -15,7 +15,7 @@
     CGRect screenSize = [UIScreen mainScreen].applicationFrame;
 }
 
-+ (NSArray *)getMemeImageList:(NSString *)memeName getIdOnly:(BOOL)getIdOnly {
++ (NSArray *)getMemeImageList:(NSString*)memeId getIdOnly:(BOOL)getIdOnly {
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
     // MOC is like getting the database, in this case from AppDelegate
@@ -35,8 +35,8 @@
     }
     
     // similar to SQL query "where"
-    if (memeName != nil) {
-        NSPredicate *pred = [NSPredicate predicateWithFormat:@"(name = %@)",memeName];
+    if (memeId != nil) {
+        NSPredicate *pred = [NSPredicate predicateWithFormat:@"(identifier = %@)",memeId];
         [req setPredicate:pred];
     }
     
@@ -47,13 +47,13 @@
     return [self getMemeImageList:nil getIdOnly:false];
 }
 
-+ (BOOL)isMemeExist:(NSString *)memeName {
-    NSArray *result = [self getMemeImageList:memeName getIdOnly:true];
-    return [[result firstObject] valueForKey:@"name"] != nil;
++ (BOOL)isMemeExist:(NSString*)memeId {
+    NSArray *result = [self getMemeImageList:memeId getIdOnly:true];
+    return [[result firstObject] valueForKey:@"identifier"] != nil;
 }
 
-+ (void)saveMemeImage:(NSString *)memeName memeImageName:(NSString *)memeImageName {
-    if ([self isMemeExist:memeName] == NO) {
++ (void)saveMemeImage:(NSString*)memeId memeName:(NSString *)memeName memeImageName:(NSString *)memeImageName {
+    if ([self isMemeExist:memeId] == NO) {
         AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
         
         // MOC is like getting the database, in this case from AppDelegate
@@ -64,10 +64,28 @@
         NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
         NSManagedObject *mo = [[NSManagedObject alloc] initWithEntity:ed insertIntoManagedObjectContext:moc];
         
+        [mo setValue:memeId forKey:@"identifier"];
         [mo setValue:memeName forKey:@"name"];
         [mo setValue:memeImageName forKey:@"image_name"];
         [moc save:nil];
     }
+}
+
++ (void)updateMemeJSON {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"MemeData" ofType:@"json"];
+    NSData *jsonFile = [NSData dataWithContentsOfFile:filePath];
+//    NSURL *localFileURL = [NSURL fileURLWithPath:@"Supporting Files/MemeData.json"];
+//    NSData *jsonFile = [NSData dataWithContentsOfURL:localFileURL];
+    NSArray *jsonData = [NSJSONSerialization JSONObjectWithData:jsonFile options:kNilOptions error:nil];
+    NSArray *images = [jsonData valueForKey:@"MemeImage"];
+    
+    for (NSArray *image in images) {
+        NSString *memeId = [image valueForKey:@"identifier"];
+        NSString *memeName = [image valueForKey:@"name"];
+        NSString *memeImageName = [image valueForKey:@"image_name"];
+        [self saveMemeImage:memeId memeName:memeName memeImageName:memeImageName];
+    }
+
 }
 
 

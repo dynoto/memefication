@@ -22,7 +22,6 @@ static NSString * const reuseIdentifier = @"MemeCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     _imageList = [MemeHelper getMemeImageList];
-    [MemeHelper saveMemeImage:@"Not Sure If" memeImageName:@"not-sure-if"];
     [self resizeCollectionView];
     [self addSearchBar];
     
@@ -69,7 +68,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
     
     
     [cell setImage: [imageObj valueForKey:@"image_name"]];
-    [cell setLabelText:[imageObj valueForKey:@"name"]];
+    [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
 
     // Configure the cell
     
