@@ -14,10 +14,17 @@
 //- (void) getScreenSize;
 + (CGColorRef) getColor:(NSString *)colorName;
 + (void) batchUpdateMemeDataFromJson;
-+ (void) updateMemeJSON;
 + (void) clearMemeImageData;
 + (void) saveMemeImage:(NSString*)memeId memeImageName:(NSString *)memeImageName;
-+ (NSArray*) getMemeImageList;
-+ (UIButton *) addRadius:(UIButton *)button color:(CGColorRef)color;
++ (void) updateMemeJSON;
 
++ (NSArray*) getMemeImageList;
++ (NSArray*) getMemeImageList:(NSString*) memeName;
++ (NSArray*) getMemeLiked:(NSString*)memeId;
++ (NSArray*) getMemeLikedList:(NSString*)memeName;
++ (NSArray*) getMemeImage:(NSString*)memeId getIdOnly:(BOOL)getIdOnly;
+
++ (UIButton*) addRadius:(UIButton *)button color:(CGColorRef)color;
+
++ (BOOL) likeMeme:(NSString*)memeId;
 @end

@@ -118,7 +118,7 @@
         <!--Favourite Collection-->
         <scene sceneID="HUY-Md-kq3">
             <objects>
-                <collectionViewController id="8hm-KN-3Yw" userLabel="Favourite Collection" customClass="MainCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="8hm-KN-3Yw" userLabel="Favourite Collection" customClass="LikeViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="30l-eT-4MR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -470,6 +470,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="m2o-ki-o1q"/>
+        <segue reference="1j9-vN-vD1"/>
     </inferredMetricsTieBreakers>
 </document>

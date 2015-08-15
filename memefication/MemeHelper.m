@@ -15,7 +15,7 @@
     CGRect screenSize = [UIScreen mainScreen].applicationFrame;
 }
 
-+ (NSArray *)getMemeImageList:(NSString*)memeId getIdOnly:(BOOL)getIdOnly {
++ (NSArray *)getMemeImage:(NSString*)memeId getIdOnly:(BOOL)getIdOnly {
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
     // MOC is like getting the database, in this case from AppDelegate
@@ -43,12 +43,40 @@
     return [moc executeFetchRequest:req error:nil];
 }
 
++ (NSArray *)getMemeImageList:(NSString*)memeName {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    // MOC is like getting the database, in this case from AppDelegate
+    NSManagedObjectContext *moc = [delegate managedObjectContext];
+    
+    // Entity description is similar to selecting "table"
+    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
+    
+    // Create a fetch request, set the entity is like pointing to the database table
+    NSFetchRequest *req = [[NSFetchRequest alloc] init];
+    [req setEntity:ed];
+    
+    // GET ID ONLY USED IN SCENARIOS WHERE YOU WANT TO CHECK IF THE DATA EXISTS
+    // if (getIdOnly) {
+    //     [req setFetchLimit:1];
+    //     [req setIncludesPropertyValues:NO];
+    // }
+    
+    // similar to SQL query "where"
+    if (memeName != nil) {
+        NSPredicate *pred = [NSPredicate predicateWithFormat:@"(name CONTAINS[cd] %@)",memeName];
+        [req setPredicate:pred];
+    }
+    
+    return [moc executeFetchRequest:req error:nil];
+}
+
 + (NSArray *)getMemeImageList {
-    return [self getMemeImageList:nil getIdOnly:false];
+    return [self getMemeImageList:nil];
 }
 
 + (BOOL)isMemeExist:(NSString*)memeId {
-    NSArray *result = [self getMemeImageList:memeId getIdOnly:true];
+    NSArray *result = [self getMemeImage:memeId getIdOnly:true];
     return [[result firstObject] valueForKey:@"identifier"] != nil;
 }
 
@@ -102,8 +130,79 @@
     
 }
 
-+ (void) batchUpdateMemeDataFromJson {
++ (BOOL)likeMeme:(NSString *)memeId {
+    NSArray *result = [self getMemeLiked:memeId];
+    if ([[result firstObject] valueForKey:@"identifier"] == nil) {
+        AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        
+        // MOC is like getting the database, in this case from AppDelegate
+        NSManagedObjectContext *moc = [delegate managedObjectContext];
+        
+        // Entity description is similar to selecting "table"
+        // NSManagedObject is for "saving" file
+        NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeFavourite" inManagedObjectContext:moc];
+        NSManagedObject *mo = [[NSManagedObject alloc] initWithEntity:ed insertIntoManagedObjectContext:moc];
+        
+        [mo setValue:memeId forKey:@"identifier"];
+        [moc save:nil];
+        return true;
+    } else {
+        return false;
+    }
+}
+
++ (NSArray *)getMemeLiked:(NSString *)memeId{
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
+    // MOC is like getting the database, in this case from AppDelegate
+    NSManagedObjectContext *moc = [delegate managedObjectContext];
+    
+    // Entity description is similar to selecting "table"
+    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeFavourite" inManagedObjectContext:moc];
+    
+    // Create a fetch request, set the entity is like pointing to the database table
+    NSFetchRequest *req = [[NSFetchRequest alloc] init];
+    [req setEntity:ed];
+    
+    
+    // similar to SQL query "where"
+    NSPredicate *pred;
+    if (memeId != nil) {
+        pred = [NSPredicate predicateWithFormat:@"(identifier = %@)",memeId];
+        [req setPredicate:pred];
+    }
+    
+    return [moc executeFetchRequest:req error:nil];
+}
+
++ (NSArray *)getMemeLikedList:(NSString *)memeName{
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *moc = [delegate managedObjectContext];
+    
+//    GET ALL FAVOURITES FIRST
+    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeFavourite" inManagedObjectContext:moc];
+    NSFetchRequest *req = [[NSFetchRequest alloc] init];
+    [req setEntity:ed];
+    NSError *error;
+    NSArray *memeLikedList = [moc executeFetchRequest:req error:&error];
+    
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (NSArray *likedObj in memeLikedList) {
+        [tempArray addObject:[[likedObj valueForKey:@"identifier"] stringValue]];
+    }
+    
+//    THEN GET ALL IMAGES FILTER IN THE FAVOURITES
+    ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
+    [req setEntity:ed];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"(identifier IN %@)", tempArray];
+    [req setPredicate:pred];
+    
+    if (memeName != nil) {
+        pred = [NSPredicate predicateWithFormat:@"(name CONTAINS[cd] %@)",memeName];
+        [req setPredicate:pred];
+    }
+    
+    return [moc executeFetchRequest:req error:nil];
 }
 
 + (UIButton *) addRadius:(UIButton *)button color:(CGColorRef)color {

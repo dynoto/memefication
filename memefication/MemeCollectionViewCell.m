@@ -21,10 +21,15 @@
     _memeLabel.strokeColor = [UIColor blackColor];
     
     _memeImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width*0.9, self.frame.size.height*0.9)];
-//    self.backgroundColor = [UIColor grayColor];
+
+    _memeLike = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-45, 15, 25, 25)];
+    [_memeLike setImage:[UIImage imageNamed:@"like-icon"] forState:UIControlStateNormal];
+    [_memeLike addTarget:self action:@selector(likeAction:) forControlEvents:UIControlEventTouchUpInside];
+
     [self addSubview:_memeImage];
     [self addSubview:_memeLabel];
-
+    [self addSubview:_memeLike];
+    
     return self;
 }
 
@@ -34,13 +39,18 @@
     _memeLabel.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height - _memeLabel.frame.size.height);
 }
 
-- (void)setImage:(NSString*)imageName {
+- (void)setAttributes:(NSString *)imageId imageName:(NSString *)imageName {
+    _memeID = imageId;
     _memeImage.image = [UIImage imageNamed:imageName];
     _memeImage.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
 }
 
 - (void)awakeFromNib {
     // Initialization code
+}
+
+- (void)likeAction:(UIButton *)sender {
+    NSLog(@"%i",[MemeHelper likeMeme:_memeID]);
 }
 
 @end

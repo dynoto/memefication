@@ -20,6 +20,7 @@
 		DC2C56C01B7A009B0030B2F6 /* MemeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2C56BE1B7A009B0030B2F6 /* MemeCollectionViewCell.m */; };
 		DC5164AE1B7C68ED002C2C7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5164AD1B7C68ED002C2C7D /* QuartzCore.framework */; };
 		DC5164B21B7C76D1002C2C7D /* MemeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5164B11B7C76D1002C2C7D /* MemeHelper.m */; };
+		DC60C8801B7F313C00AFAE25 /* LikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC60C87F1B7F313C00AFAE25 /* LikeViewController.m */; };
 		DC79E0E31B7A655300E586AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC79E0E21B7A655300E586AE /* Images.xcassets */; };
 		DC79E0E51B7A656F00E586AE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC79E0E41B7A656F00E586AE /* Media.xcassets */; };
 		DC79E0E81B7A7A7100E586AE /* MemeCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC79E0E71B7A7A7100E586AE /* MemeCreateViewController.m */; };
@@ -63,6 +64,8 @@
 		DC5164AF1B7C7487002C2C7D /* memefication.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memefication.pch; sourceTree = "<group>"; };
 		DC5164B01B7C76D1002C2C7D /* MemeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeHelper.h; sourceTree = "<group>"; };
 		DC5164B11B7C76D1002C2C7D /* MemeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeHelper.m; sourceTree = "<group>"; };
+		DC60C87E1B7F313C00AFAE25 /* LikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeViewController.h; sourceTree = "<group>"; };
+		DC60C87F1B7F313C00AFAE25 /* LikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeViewController.m; sourceTree = "<group>"; };
 		DC79E0E21B7A655300E586AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DC79E0E41B7A656F00E586AE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		DC79E0E61B7A7A7100E586AE /* MemeCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeCreateViewController.h; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				DC5164AF1B7C7487002C2C7D /* memefication.pch */,
 				DC2C56951B79FD670030B2F6 /* AppDelegate.h */,
 				DC2C56961B79FD670030B2F6 /* AppDelegate.m */,
+				DC60C87E1B7F313C00AFAE25 /* LikeViewController.h */,
+				DC60C87F1B7F313C00AFAE25 /* LikeViewController.m */,
 				DC2C56BA1B79FE5A0030B2F6 /* MainCollectionViewController.h */,
 				DC2C56BB1B79FE5A0030B2F6 /* MainCollectionViewController.m */,
 				DC79E0E61B7A7A7100E586AE /* MemeCreateViewController.h */,
@@ -346,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC60C8801B7F313C00AFAE25 /* LikeViewController.m in Sources */,
 				DC0A6A9B1B7B97E40048F108 /* memefication.xcdatamodeld in Sources */,
 				DC2C56C01B7A009B0030B2F6 /* MemeCollectionViewCell.m in Sources */,
 				DCE8C6D71B7CCE00001959D2 /* MemeShareViewController.m in Sources */,

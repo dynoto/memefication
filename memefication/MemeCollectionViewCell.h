@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "THLabel.h"
+#import "MemeHelper.h"
 
 @interface MemeCollectionViewCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet THLabel *memeLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *memeImage;
+@property (strong, nonatomic) IBOutlet UIButton *memeLike;
 @property (strong, nonatomic) NSString *memeID;
 
--(void)setLabelText:(NSString*)labelName;
--(void)setImage:(NSString*)imageName;
+- (void)setLabelText:(NSString*)labelName;
+- (void)setAttributes:(NSString*)imageId imageName:(NSString*)imageName;
+- (void)likeAction:(UIButton *)sender;
 
 @end

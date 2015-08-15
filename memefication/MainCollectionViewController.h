@@ -16,6 +16,8 @@
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionReusableView *collectionViewHeader;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (strong, nonatomic) NSArray *imageList;
+@property (strong, nonatomic) UIImage *selectedImage;
 
 
 

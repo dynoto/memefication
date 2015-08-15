@@ -10,9 +10,6 @@
 
 @interface MainCollectionViewController ()
 
-@property (strong, nonatomic) NSArray *imageList;
-@property (strong, nonatomic) UIImage *selectedImage;
-
 @end
 
 @implementation MainCollectionViewController
@@ -25,13 +22,8 @@ static NSString * const reuseIdentifier = @"MemeCell";
     [self resizeCollectionView];
     [self addSearchBar];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
     // Register cell classes
     [self.collectionView registerClass:[MemeCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,7 +59,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
     NSArray *imageObj = [_imageList objectAtIndex:indexPath.row];
     
     
-    [cell setImage: [imageObj valueForKey:@"image_name"]];
+    [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
     [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
 
     // Configure the cell
@@ -104,17 +96,23 @@ static NSString * const reuseIdentifier = @"MemeCell";
 }
 
 - (void)addSearchBar {
-    self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.collectionView.bounds.size.width, 40)];
-    self.searchBar.barTintColor = [UIColor whiteColor];
-    self.searchBar.delegate = self;
-    [self.collectionView addSubview:self.searchBar];
+    _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.collectionView.bounds.size.width, 40)];
+    _searchBar.barTintColor = [UIColor whiteColor];
+    _searchBar.delegate = self;
+    [self.collectionView addSubview:_searchBar];
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-
+    if ([searchText length]) {
+        _imageList = [MemeHelper getMemeImageList:searchText];
+    } else {
+        _imageList = [MemeHelper getMemeImageList];
+    }
+    [self.collectionView reloadData];
+    [searchBar becomeFirstResponder];
 }
 
 #pragma mark <UICollectionViewDelegate>
@@ -157,5 +155,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
         [segue.destinationViewController performSelector:@selector(setImageName:) withObject:_selectedImage];
     }
 }
+
+
 
 @end
