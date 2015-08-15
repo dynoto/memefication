@@ -194,11 +194,16 @@
 //    THEN GET ALL IMAGES FILTER IN THE FAVOURITES
     ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
     [req setEntity:ed];
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"(identifier IN %@)", tempArray];
-    [req setPredicate:pred];
-    
+    NSPredicate *pred;
     if (memeName != nil) {
-        pred = [NSPredicate predicateWithFormat:@"(name CONTAINS[cd] %@)",memeName];
+        NSPredicate *pd1 = [NSPredicate predicateWithFormat:@"(identifier IN %@)", tempArray];
+        NSPredicate *pd2 = [NSPredicate predicateWithFormat:@"(name CONTAINS[cd] %@)",memeName];
+        
+        NSArray *predicateArray = [[NSArray alloc] initWithObjects:pd1,pd2, nil];
+        pred = [NSCompoundPredicate andPredicateWithSubpredicates:predicateArray];
+        [req setPredicate:pred];
+    } else {
+        pred = [NSPredicate predicateWithFormat:@"(identifier IN %@)", tempArray];
         [req setPredicate:pred];
     }
     

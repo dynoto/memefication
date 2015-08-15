@@ -25,9 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@"Test");
     super.imageList = [MemeHelper getMemeLikedList:nil];
     [super.collectionView reloadData];
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    if ([searchText length]) {
+        super.imageList = [MemeHelper getMemeLikedList:searchText];
+    } else {
+        super.imageList = [MemeHelper getMemeLikedList:nil];
+    }
+    [super.collectionView reloadData];
+    [searchBar becomeFirstResponder];
 }
 
 /*
