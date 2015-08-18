@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreText/CoreText.h>
-#import "THLabel.h"
+#import <THLabel/THLabel.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 #import "MemeHelper.h"
 
 @interface MemeCreateViewController : UIViewController <UITextFieldDelegate>
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *memeBottomText;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UIButton *createButton;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 @property (strong, nonatomic) UIImage *selectedImage;
 
 

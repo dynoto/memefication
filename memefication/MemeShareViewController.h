@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <KVNProgress/KVNProgress.h>
-#import "Social/Social.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+#import <Social/Social.h>
 #import "MemeHelper.h"
 
 @interface MemeShareViewController : UIViewController <UIDocumentInteractionControllerDelegate>
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 @property (strong, nonatomic) UIDocumentInteractionController *docController;
 
 

@@ -21,6 +21,7 @@
     [super viewDidLoad];
     [self prepareUI];
     _memeImage.image = _tempImage;
+    [self runAds];
     // Do any additional setup after loading the view.
 }
 
@@ -68,6 +69,13 @@
     _docController.annotation = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"This is the users caption that will be displayed in Instagram"], @"InstagramCaption", nil];
     _docController.UTI = @"com.instagram.exclusivegram";
     [_docController presentOpenInMenuFromRect:CGRectMake(1, 1, 1, 1) inView:self.view animated:YES];
+}
+
+- (void)runAds {
+    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
 }
 
 
