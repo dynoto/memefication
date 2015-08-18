@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-KVNProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-THLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6824231DAFF09FEFF2C3B4CC</key>
+		<key>021D6BBF194744E4C0DD656D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E24A426C2E6796D8CC6F0BD</key>
+		<key>05DC03600D0CDFA4694C9C76</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8837C45FF7B9AAB9885CE41E</key>
+		<key>16E6FAAAF7C26363606EBAC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91E378E0C662FF1FBB7787B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,12 +15,16 @@
     self = [super initWithFrame:CGRectMake(0, 0, screenSize.size.width*0.5, screenSize.size.width*0.5)];
     
     _memeLabel = [[THLabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    _memeLabel.numberOfLines = 2;
+    _memeLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _memeLabel.font = [UIFont fontWithName:@"Impact" size:18.0];
     _memeLabel.textColor = [UIColor whiteColor];
     _memeLabel.strokeSize = 2.0f;
     _memeLabel.strokeColor = [UIColor blackColor];
     
-    _memeImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width*0.9, self.frame.size.height*0.9)];
+    _memeImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width*0.95, self.frame.size.height*0.95)];
+    _memeImage.layer.borderWidth = 0.5f;
+    _memeImage.layer.borderColor = [[UIColor colorWithRed:0 green:0 blue:0 alpha:0.1] CGColor];
 
     _memeLike = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-45, 15, 25, 25)];
     [_memeLike setImage:[UIImage imageNamed:@"like-icon"] forState:UIControlStateNormal];
@@ -50,7 +54,12 @@
 }
 
 - (void)likeAction:(UIButton *)sender {
-    NSLog(@"%i",[MemeHelper likeMeme:_memeID]);
+    [MemeHelper likeMeme:_memeID];
+    [_memeLike setImage:[UIImage imageNamed:@"like-active-icon"] forState:UIControlStateNormal];
+}
+
+- (void)setActive {
+    [_memeLike setImage:[UIImage imageNamed:@"like-active-icon"] forState:UIControlStateNormal];
 }
 
 @end

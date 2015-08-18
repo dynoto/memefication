@@ -11,6 +11,7 @@
 @interface MemeShareViewController ()
 
 @property (strong, nonatomic) UIImage *tempImage;
+@property BOOL isSavedToPhotos;
 
 @end
 
@@ -33,14 +34,26 @@
 }
 
 - (void)prepareUI {
+    _saveButton = [MemeHelper addRadius:_saveButton color:nil];
     _doneButton = [MemeHelper addRadius:_doneButton color:nil];
     _shareButton = [MemeHelper addRadius:_shareButton color:[MemeHelper getColor:@"red"]];
-    
-    
 }
 
 - (void)doneAction:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:TRUE];
+}
+
+- (IBAction)saveAction:(id)sender {
+    if (!_isSavedToPhotos) {
+        UIImageWriteToSavedPhotosAlbum(_memeImage.image, nil, nil, nil);
+        [KVNProgress showSuccessWithStatus:@"Saved to photos"];
+        _isSavedToPhotos = true;
+        _saveButton.enabled = false;
+        UIColor *grey = [UIColor colorWithRed:127/255.0 green:127/255.0 blue:127/255.0 alpha:0.5 ];
+        [_saveButton setTitleColor:grey forState:UIControlStateNormal];
+        _saveButton.layer.borderColor = [grey CGColor];
+        
+    }
 }
 
 - (IBAction)socialShareAction:(id)sender {

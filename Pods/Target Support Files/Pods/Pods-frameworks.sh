@@ -49,9 +49,11 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Groot.framework'
+  install_framework 'KVNProgress.framework'
   install_framework 'THLabel.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Groot.framework'
+  install_framework 'KVNProgress.framework'
   install_framework 'THLabel.framework'
 fi

@@ -10,9 +10,12 @@
 
 @interface LikeViewController ()
 
+
 @end
 
 @implementation LikeViewController
+
+static NSString * const reuseIdentifier = @"MemeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,14 +23,18 @@
     // Do any additional setup after loading the view.
 }
 
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 - (void)viewDidAppear:(BOOL)animated {
     super.imageList = [MemeHelper getMemeLikedList:nil];
     [super.collectionView reloadData];
 }
+
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     if ([searchText length]) {
@@ -38,6 +45,23 @@
     [super.collectionView reloadData];
     [searchBar becomeFirstResponder];
 }
+
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    MemeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    NSArray *imageObj = [super.imageList objectAtIndex:indexPath.row];
+    
+    
+    [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
+    [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
+    [cell setActive];
+    
+    // Configure the cell
+    
+    return cell;
+}
+
+
 
 /*
 #pragma mark - Navigation

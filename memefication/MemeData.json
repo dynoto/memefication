@@ -59,6 +59,21 @@
                   "identifier": 12,
                   "name": "Why The Fuck",
                   "image_name": "why-the-fuck"
-                  }
+                  },
+                  {
+                  "identifier": 13,
+                  "name": "Awesome Penguin",
+                  "image_name": "awesome-penguin"
+                  },
+                  {
+                  "identifier": 14,
+                  "name": "Awkward Penguin",
+                  "image_name": "awkward-penguin"
+                  },
+                  {
+                  "identifier": 15,
+                  "name": "Awesome Awkward Penguin",
+                  "image_name": "awesome-awkward-penguin"
+                  },
                   ]
 }

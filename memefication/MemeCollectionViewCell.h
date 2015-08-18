@@ -19,6 +19,7 @@
 
 - (void)setLabelText:(NSString*)labelName;
 - (void)setAttributes:(NSString*)imageId imageName:(NSString*)imageName;
+- (void)setActive;
 - (void)likeAction:(UIButton *)sender;
 
 @end
