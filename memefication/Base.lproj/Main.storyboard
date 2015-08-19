@@ -38,7 +38,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knl-8E-N2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="-325"/>
+            <point key="canvasLocation" x="522" y="-324.99999999999994"/>
         </scene>
         <!--Favourite Navigation-->
         <scene sceneID="mi8-V2-2JB">
@@ -114,7 +114,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1043" y="-325"/>
+            <point key="canvasLocation" x="1043" y="-324.99999999999994"/>
         </scene>
         <!--Favourite Collection-->
         <scene sceneID="HUY-Md-kq3">
@@ -185,7 +185,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLw-Oi-2r8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.5" y="416.5"/>
+            <point key="canvasLocation" x="1042.5" y="416.49999999999994"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KPm-7v-igp">
@@ -202,12 +202,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSz-kV-ZIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.5" y="1459.5"/>
+            <point key="canvasLocation" x="888.5" y="1459.4999999999998"/>
         </scene>
         <!--Meme Create-->
         <scene sceneID="uRb-ID-ihf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UPh-Qq-77s" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MemeCreate" id="QPl-i9-Hy7" userLabel="Meme Create" customClass="MemeCreateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hxi-xJ-5Cz"/>
@@ -278,7 +277,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bottom Text" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jTF-gw-1yJ">
-                                <rect key="frame" x="16" y="386" width="288" height="31"/>
+                                <rect key="frame" x="16" y="386" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done"/>
                                 <connections>
@@ -365,6 +364,7 @@
                         <segue destination="Gsm-Ym-f2w" kind="push" identifier="segueMemeCreateToShare" id="ZRB-4J-oZv"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPh-Qq-77s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1675" y="9"/>
         </scene>
@@ -461,6 +461,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="60z-3V-x0I"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="bannerView" destination="Jpc-JV-ZJm" id="0EO-Ap-ztU"/>
                         <outlet property="doneButton" destination="qY9-6n-nUH" id="3eL-uP-YBM"/>

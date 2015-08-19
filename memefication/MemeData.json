@@ -105,5 +105,20 @@
                   "name": "10 High Guy",
                   "image_name": "10-high-guy"
                   },
+                  {
+                  "identifier": 22,
+                  "name": "Success Kid",
+                  "image_name": "success-kid-2"
+                  },
+                  {
+                  "identifier": 23,
+                  "name": "Sudden Clarity",
+                  "image_name": "sudden-clarity-clarence"
+                  },
+                  {
+                  "identifier": 24,
+                  "name": "Weird Stuff",
+                  "image_name": "weird-stuff-potoo"
+                  },
                   ]
 }

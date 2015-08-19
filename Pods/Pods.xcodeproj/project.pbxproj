@@ -7,533 +7,498 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0392A14E706D954CF79E5F58 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBF83F7CC19D7AC72482359 /* KVNProgressView.xib */; };
-		073A632103E7D9056780A47E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349F9DA6DB23A1A897016223 /* QuartzCore.framework */; };
-		100BF4737944326E4843A1C6 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 549E7953B588E7270C02B0CF /* Pods-dummy.m */; };
-		1151394F006F8394494A7C66 /* NSPropertyDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C25DDE387DC22D00FDFF6FE /* NSPropertyDescription+Groot.m */; };
-		1322F4C8AB253B70D80B4AB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881BEA94DF8D3639434C6F0 /* Foundation.framework */; };
-		17C5D2F9766B8D85D47581F5 /* GRTJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846CEF6381BECB879E0828C /* GRTJSONSerialization.m */; };
-		1B9069A69AF8A9765AADA316 /* KVNProgressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 76405DE69D3D844B2DA7F907 /* KVNProgressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C6164496735520DF2422375 /* NSPropertyDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 231AEEA23C8928D82228A105 /* NSPropertyDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		201B952299652E13B4942795 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 31AFDA6791D0372FE2EFFC56 /* UIImage+KVNEmpty.m */; };
-		208BB165E6EB16FC417D54FA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB6E2878B8C91CEC79906B3 /* CoreText.framework */; };
-		23DDF2E7054AFE44508456A1 /* NSManagedObject+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBA53FC44C472C165727536 /* NSManagedObject+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		2B1AD66C8C87FBAC5A1460DA /* NSValueTransformer+Groot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2F78FFCD6607C102609307 /* NSValueTransformer+Groot.swift */; };
-		2E96E2E313ACEBC6E271E0B8 /* UIImage+KVNEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7AE1751CD9277C4178DE90 /* UIImage+KVNEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F50DD276125DC8FF63EA73D /* KVNProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 17265D04BE12B9A0675E4753 /* KVNProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39C28ADE26E741992C475653 /* NSAttributeDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 561166163B2116BC20E92416 /* NSAttributeDescription+Groot.m */; };
-		3A8DAA13CEFB1BD112A1BF9D /* Pods-Groot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F5A6BD271D8E53AA085544 /* Pods-Groot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C20FD3261B84F03BB5748EE /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BBDCBE701CC576A0932E08 /* UIColor+KVNContrast.m */; };
-		3D25AC0D4FD991B2C3945C9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881BEA94DF8D3639434C6F0 /* Foundation.framework */; };
-		43D9BD4C18BCEBB2283130E3 /* Pods-THLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E3E67972C9BECA3E14478E /* Pods-THLabel-dummy.m */; };
-		4545EE9469C37849514430A4 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 716A5FD7E723F3003D5DF698 /* KVNProgress.m */; };
-		46E29D5792EF6EB3905316E6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9432B2D67390342E601B169 /* GLKit.framework */; };
-		4DD40932C74F67A56C373A2C /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A792EFE9AB55A3BD65D0CD31 /* KVNProgressConfiguration.m */; };
-		50FAEBD76DAE939D39A9BD26 /* Pods-Groot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC470A82BFDCA10FFFFBFC4 /* Pods-Groot-dummy.m */; };
-		6058BB90A2D89A4E0B1760A8 /* Pods-KVNProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7647F66CE00962FE37B33C1 /* Pods-KVNProgress-dummy.m */; };
-		6144B6AC02C048B4CD091510 /* GRTManagedStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B16C722640610893C0DFF19 /* GRTManagedStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		653767AC8219E13CC907DC79 /* THLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A014BC05CBCAA85BE2873CD /* THLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6815365A59332958E212865D /* GRTJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F486859A7B3B5E070105A15D /* GRTJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		688525E0606C7BDA260421DB /* GRTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9113F047964076243BAF75E0 /* GRTError.m */; };
-		6C50588199F5B3FF0E485EEF /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BF2F169DB3DAA47B20BDD0 /* UIImage+KVNImageEffects.m */; };
-		6CABE5AC01961A721CD20CE3 /* GRTManagedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CC9B76E246DBD92B6E4040 /* GRTManagedStore.m */; };
-		6E20B657E9627DF5B667B645 /* THLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10215708072E659D8981FF75 /* THLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		795DEBD4A193550B8A136AA0 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DED7E04E4B5E200259D78E2 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B7FFDAB47C1B1B4FFE5C526 /* Groot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B03F1376E25947553941016 /* Groot.swift */; };
-		7F3C26995FEBC0C325532747 /* Pods-THLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EBFEE329E08F959119FCD17 /* Pods-THLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C331F072E0F9E7FA7899BE9 /* Pods-KVNProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C411285C294F3C15B19F0E92 /* Pods-KVNProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A024CE2B277F87E6C010782E /* GRTValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C1E195332283847D7CD1CB0 /* GRTValueTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A45BCC810E6095957338A7E2 /* NSManagedObject+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 842948E4F350400CA145DAE6 /* NSManagedObject+Groot.m */; };
-		A66AB445EE42BFAADD271400 /* UIColor+KVNContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E00264B04C6E0FE45914369 /* UIColor+KVNContrast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B3BAB28A78CB0BAD5EE3504C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476304D11BE27315776F1205 /* CoreData.framework */; };
-		B5D5E7D3296D38C90BFADDC7 /* GRTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1865494BC58ADDB0BB948FD6 /* GRTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB01B2902FE9C61A5EE5FF4C /* NSEntityDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 186C262271284CC1A84BE6AC /* NSEntityDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		BDCBE1A11CDA8464DEE0614E /* Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AFA8AD1F1306555FFFFB7B8 /* Groot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2FC381351B2A6441333F79F /* UIImage+KVNImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 90596287E0A2F0412459F942 /* UIImage+KVNImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D406ED43D63C9342744C2B23 /* GRTValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F08549D64D1165FB6AE78AF1 /* GRTValueTransformer.m */; };
-		DD1537F755B71DEBC06A2743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881BEA94DF8D3639434C6F0 /* Foundation.framework */; };
-		E34B86195AE0002ABFD74B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1881BEA94DF8D3639434C6F0 /* Foundation.framework */; };
-		E48B563F7D200D373E725AFC /* NSValueTransformer+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 09150253ABCF01BBFFD55AEE /* NSValueTransformer+Groot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDF5D60947508867AF9735B2 /* NSValueTransformer+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE70CE959175532222BB4CB /* NSValueTransformer+Groot.m */; };
-		F6641A2FC579D0C0CF46D563 /* NSEntityDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 796B7BBF487B48EF8D783844 /* NSEntityDescription+Groot.m */; };
-		F66B0E2159F95310EE74ABB3 /* NSAttributeDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB136D6A430BE78276F5383 /* NSAttributeDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		010D0B983D3C8A898B303A39 /* NSValueTransformer+Groot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335A37D4A81F8F702E0FA82 /* NSValueTransformer+Groot.swift */; };
+		0CEF2820F73390E437E6F86C /* GRTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE6696B44569EF792034893 /* GRTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1726FB25E0246FF6BE75D14B /* Pods-THLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6253119707D0A1836EAA10DB /* Pods-THLabel-dummy.m */; };
+		1A573424345260A6B9159CA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D18181FD3F1246C145476 /* Foundation.framework */; };
+		23CE12AF4EACF9BBE32EA6E2 /* THLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8358F24FB31616A655926D4C /* THLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		252530373AE9A76A00F70C6A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2985C69DB09A2BB0291426FE /* CoreText.framework */; };
+		26E90E1FE058C307C8CD6539 /* NSEntityDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 766313CC9164F4DE9B716934 /* NSEntityDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2D1DC6DA3E6BC0CDDBED086A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D18181FD3F1246C145476 /* Foundation.framework */; };
+		3D7417B4F45682E366AAF38B /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4728F54E63580CF81AC74BC9 /* UIImage+KVNImageEffects.m */; };
+		488A5E28D064BB35CDA8ED93 /* Groot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F2F4F77972A5E4B0E89FE /* Groot.swift */; };
+		52BE19A7A3A0F3EE6B5F8F24 /* NSManagedObject+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE1C95D823290BC5FB54E65 /* NSManagedObject+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		53C9F4CC141A956F5DFB492B /* GRTManagedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A6351CE9D2461E5D5C7B6672 /* GRTManagedStore.m */; };
+		57165E63EEE9914E8F09C8AE /* GRTJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D2264E75CE68035BD33F9FB8 /* GRTJSONSerialization.m */; };
+		5B1EB0BF34A0131666C0E1C2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBFBB2391218C49B979788B /* GLKit.framework */; };
+		620EF06FEDAD7C796EB8D91D /* NSValueTransformer+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 466FC913BE79DA311AE3E314 /* NSValueTransformer+Groot.m */; };
+		6B44B84447C55B785432617A /* NSManagedObject+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 0267F003C03920C717019586 /* NSManagedObject+Groot.m */; };
+		6CB3737B9F32159DEA8CA1BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F68AB47B96991A5CAB4FFF /* QuartzCore.framework */; };
+		6F701753D6E7B47C084794D6 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 89493CC6A07A292C9B4378CF /* UIImage+KVNEmpty.m */; };
+		735675D0FAE4A547EAC25762 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFABE0BD7AD42DB1580507A /* KVNProgress.m */; };
+		75C64C36D2CD154E66716715 /* NSAttributeDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C86CC48AFE394B9A2BE8E41 /* NSAttributeDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		761D3E8D692EF4272CB18C8D /* Pods-THLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E61B22094B4E04CAA04A011 /* Pods-THLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		763D921B9DE0E7CC2088D5A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D18181FD3F1246C145476 /* Foundation.framework */; };
+		7EF88E5A425E133F10296E63 /* Pods-KVNProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 128CDF7B239FD681DFD45C09 /* Pods-KVNProgress-dummy.m */; };
+		89CE5454D2AF9B439CA4B70E /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B717089EE29D8B8B0B69B8AB /* KVNProgressView.xib */; };
+		8F5FB78C03584E3B13C2D355 /* UIColor+KVNContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = 78737B01D2406EBF9531AE8E /* UIColor+KVNContrast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92D3224F2FC8FF36E6097E3C /* GRTValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 487DA861BDE9EED0E04BD906 /* GRTValueTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9A916A2F1C40EC651BA0D70B /* Pods-Groot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F40514A646650EC435BE1C /* Pods-Groot-dummy.m */; };
+		A058D1BC69A7707DF9AB404B /* Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FFA91F2E16657F25E448E3 /* Groot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A18B74057F4412DCB5941C27 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75FB306F323D082375E7DF4 /* CoreData.framework */; };
+		A3A3BB2D5B02D0304D4006AB /* NSAttributeDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA4399BAC83BE94517405FF /* NSAttributeDescription+Groot.m */; };
+		A3D9D7B77993B547B0CDEDA0 /* KVNProgressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F04FD3B1618C17AC4866EA /* KVNProgressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1695DD9AEA9232412DC7D5C /* KVNProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B475FA831E80117F783557E /* KVNProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3E48D711AE7122A31E88B20 /* Pods-Groot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2081018CD28FF3269A7E5EBF /* Pods-Groot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9FA6FBED3F016983EEA4AC9 /* NSPropertyDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E61D944AED23F1CB2A148 /* NSPropertyDescription+Groot.m */; };
+		C02317D240276D787CA1B120 /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F53B0F8F96297E16184FB7 /* KVNProgressConfiguration.m */; };
+		C519FD7664AEE2ED62595DA8 /* UIImage+KVNEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0764D9CA5C83E1AAFA2CC67A /* UIImage+KVNEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA704C7264A3A7872B57228E /* NSValueTransformer+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 18EA4F8B936DC1B4FB20DF62 /* NSValueTransformer+Groot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB7F6714705B12D750CACBC9 /* THLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D2850C14B98DBD7942444A9 /* THLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D092AC30A7C4D1772DD43369 /* UIImage+KVNImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4090B1C16F978D023AC33C5D /* UIImage+KVNImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09859BC13CF5699512C4058 /* NSEntityDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = D53E84AB1EB368FBB36DCF54 /* NSEntityDescription+Groot.m */; };
+		D2E88F76C7178D8ECDA98E16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D18181FD3F1246C145476 /* Foundation.framework */; };
+		D31B3FA8C2F6FF7F0933B01A /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC30A928C655399C23B91122 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D77C7EBC1801C53603E2B1B0 /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAFA8F8B3F877B6196B9397 /* UIColor+KVNContrast.m */; };
+		D80243B5EB8DA58BEB6552A5 /* GRTError.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3DF2A43286CB0F326E5A8E /* GRTError.m */; };
+		DFAD2E3B0ECBFFC473836C66 /* GRTJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FB257D114B4175C905A3E81 /* GRTJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F525E8EEA4DC6DB1265C8130 /* NSPropertyDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A28EE0625C104DC97394B0B /* NSPropertyDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F821B4A24D22C87555CFD1C1 /* GRTManagedStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A2E3D00FC54A6E63C2125D /* GRTManagedStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9385ABE7DE244DB6576E3B3 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4109B30795EE6184397F2CD /* Pods-dummy.m */; };
+		FC108FB84708E46054C78E9B /* GRTValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 775C4E0663DE438C3A645AC1 /* GRTValueTransformer.m */; };
+		FED7C1CD995D0E1092E567FD /* Pods-KVNProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C48F16B8125CE05937969405 /* Pods-KVNProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2355B70C94EA94A37C6B47EE /* PBXContainerItemProxy */ = {
+		1E22B59E6E26A4807D0176D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3FDE5C977E6C84FC3614362 /* Project object */;
+			containerPortal = A5726C73B86AB9D0041378DF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D8501F38BECA631F525AF74C;
-			remoteInfo = "Pods-THLabel";
-		};
-		3201FB7FE8DE4C7AC6176B2A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A3FDE5C977E6C84FC3614362 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D09B2D3554BC7190D891586B;
+			remoteGlobalIDString = E9E4F94925042125FF4F78C5;
 			remoteInfo = "Pods-Groot";
 		};
-		F4B4A0C11C40F0919ADF1D17 /* PBXContainerItemProxy */ = {
+		3C410DB54CA9757D0BE147FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A3FDE5C977E6C84FC3614362 /* Project object */;
+			containerPortal = A5726C73B86AB9D0041378DF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B0713810F3EF92AFD0A40292;
+			remoteGlobalIDString = 723D853B21BCC2FD500183B7;
 			remoteInfo = "Pods-KVNProgress";
+		};
+		54D716CFE452C9E36BF41D48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5726C73B86AB9D0041378DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68C7F6007755EB0488AA3F10;
+			remoteInfo = "Pods-THLabel";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09150253ABCF01BBFFD55AEE /* NSValueTransformer+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+Groot.h"; path = "Groot/NSValueTransformer+Groot.h"; sourceTree = "<group>"; };
-		09E08A7DC0C13C1F56809850 /* THLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AFA8AD1F1306555FFFFB7B8 /* Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Groot.h; path = Groot/Groot.h; sourceTree = "<group>"; };
-		0D4A7B1E9185C1892358CFDE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10215708072E659D8981FF75 /* THLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THLabel.m; path = THLabel/THLabel.m; sourceTree = "<group>"; };
-		11657D8A373F44F808953042 /* Pods-KVNProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVNProgress.xcconfig"; sourceTree = "<group>"; };
-		1172098A060ED8246A7BE728 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		17265D04BE12B9A0675E4753 /* KVNProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgress.h; path = KVNProgress/Classes/KVNProgress.h; sourceTree = "<group>"; };
-		180EF75A17576106EEDE1109 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		1846CEF6381BECB879E0828C /* GRTJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTJSONSerialization.m; path = Groot/GRTJSONSerialization.m; sourceTree = "<group>"; };
-		1865494BC58ADDB0BB948FD6 /* GRTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTError.h; path = Groot/GRTError.h; sourceTree = "<group>"; };
-		186C262271284CC1A84BE6AC /* NSEntityDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+Groot.h"; path = "Groot/Private/NSEntityDescription+Groot.h"; sourceTree = "<group>"; };
-		1881BEA94DF8D3639434C6F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		19BF2F169DB3DAA47B20BDD0 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNImageEffects.m"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
-		1A7AE1751CD9277C4178DE90 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNEmpty.h"; path = "KVNProgress/Categories/UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
-		1BB136D6A430BE78276F5383 /* NSAttributeDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+Groot.h"; path = "Groot/Private/NSAttributeDescription+Groot.h"; sourceTree = "<group>"; };
-		1FAACA36C164707AE668211F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		1FBA53FC44C472C165727536 /* NSManagedObject+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Groot.h"; path = "Groot/Private/NSManagedObject+Groot.h"; sourceTree = "<group>"; };
-		231AEEA23C8928D82228A105 /* NSPropertyDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyDescription+Groot.h"; path = "Groot/Private/NSPropertyDescription+Groot.h"; sourceTree = "<group>"; };
-		24412D71BEA436752169CCC6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		27E3E67972C9BECA3E14478E /* Pods-THLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THLabel-dummy.m"; sourceTree = "<group>"; };
-		2CF0605FEC17CADB7C5BBAB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D2F78FFCD6607C102609307 /* NSValueTransformer+Groot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSValueTransformer+Groot.swift"; path = "Groot/NSValueTransformer+Groot.swift"; sourceTree = "<group>"; };
-		2D9BAE0559D2FA7FF07859B1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		31AFDA6791D0372FE2EFFC56 /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNEmpty.m"; path = "KVNProgress/Categories/UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
-		349F9DA6DB23A1A897016223 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3A014BC05CBCAA85BE2873CD /* THLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THLabel.h; path = THLabel/THLabel.h; sourceTree = "<group>"; };
-		42DBB7B13B5B3655012A9C57 /* Pods-KVNProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVNProgress.modulemap"; sourceTree = "<group>"; };
-		476304D11BE27315776F1205 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		4B16C722640610893C0DFF19 /* GRTManagedStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTManagedStore.h; path = Groot/GRTManagedStore.h; sourceTree = "<group>"; };
-		4C1E195332283847D7CD1CB0 /* GRTValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTValueTransformer.h; path = Groot/Private/GRTValueTransformer.h; sourceTree = "<group>"; };
-		4CFA2B06FCE67C1CBC4E629C /* Pods-THLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THLabel-prefix.pch"; sourceTree = "<group>"; };
-		5010D84BC940BF1ACEC4BDA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		549E7953B588E7270C02B0CF /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		561166163B2116BC20E92416 /* NSAttributeDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+Groot.m"; path = "Groot/Private/NSAttributeDescription+Groot.m"; sourceTree = "<group>"; };
-		5CB9746C2A489CB0D9C0D9B9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
-		5EB6E2878B8C91CEC79906B3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
-		62F5A6BD271D8E53AA085544 /* Pods-Groot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Groot-umbrella.h"; sourceTree = "<group>"; };
-		65BBDCBE701CC576A0932E08 /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KVNContrast.m"; path = "KVNProgress/Categories/UIColor+KVNContrast.m"; sourceTree = "<group>"; };
-		668A1A0B9A2887AE0B90D098 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		675CC10ED5864592117E5605 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
-		6BFE58E8F2AAF2BEE2C6E8FF /* Pods-THLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THLabel.xcconfig"; sourceTree = "<group>"; };
-		6C25DDE387DC22D00FDFF6FE /* NSPropertyDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPropertyDescription+Groot.m"; path = "Groot/Private/NSPropertyDescription+Groot.m"; sourceTree = "<group>"; };
-		6EBFEE329E08F959119FCD17 /* Pods-THLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THLabel-umbrella.h"; sourceTree = "<group>"; };
-		716A5FD7E723F3003D5DF698 /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgress.m; path = KVNProgress/Classes/KVNProgress.m; sourceTree = "<group>"; };
-		76405DE69D3D844B2DA7F907 /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgressConfiguration.h; path = KVNProgress/Classes/KVNProgressConfiguration.h; sourceTree = "<group>"; };
-		796B7BBF487B48EF8D783844 /* NSEntityDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+Groot.m"; path = "Groot/Private/NSEntityDescription+Groot.m"; sourceTree = "<group>"; };
-		7CE70CE959175532222BB4CB /* NSValueTransformer+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+Groot.m"; path = "Groot/NSValueTransformer+Groot.m"; sourceTree = "<group>"; };
-		842948E4F350400CA145DAE6 /* NSManagedObject+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Groot.m"; path = "Groot/Private/NSManagedObject+Groot.m"; sourceTree = "<group>"; };
-		8718CB6401704D7ACDDB2E90 /* Pods-THLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-THLabel.modulemap"; sourceTree = "<group>"; };
-		90596287E0A2F0412459F942 /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNImageEffects.h"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
-		9113F047964076243BAF75E0 /* GRTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTError.m; path = Groot/GRTError.m; sourceTree = "<group>"; };
-		9B03F1376E25947553941016 /* Groot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Groot.swift; path = Groot/Groot.swift; sourceTree = "<group>"; };
-		9BAE5409B073B95DF444C610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CBF83F7CC19D7AC72482359 /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KVNProgressView.xib; path = KVNProgress/Resources/KVNProgressView.xib; sourceTree = "<group>"; };
-		9DED7E04E4B5E200259D78E2 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		9E00264B04C6E0FE45914369 /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
-		9ED37931271C6C36D298F49B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
-		A36B1D7284598B8C19C02AE2 /* Groot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Groot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A792EFE9AB55A3BD65D0CD31 /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgressConfiguration.m; path = KVNProgress/Classes/KVNProgressConfiguration.m; sourceTree = "<group>"; };
-		ADC470A82BFDCA10FFFFBFC4 /* Pods-Groot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Groot-dummy.m"; sourceTree = "<group>"; };
-		ADEF8A660BC7F1D9ED495A30 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C411285C294F3C15B19F0E92 /* Pods-KVNProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVNProgress-umbrella.h"; sourceTree = "<group>"; };
-		C9748F16602A378E395D85E4 /* Pods-Groot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Groot.xcconfig"; sourceTree = "<group>"; };
-		CD3937D5498C32576510C13D /* Pods-Groot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Groot-prefix.pch"; sourceTree = "<group>"; };
-		CE204017AE3F7F324E80096A /* Pods-THLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THLabel-Private.xcconfig"; sourceTree = "<group>"; };
-		CFF822686AE6523601D7FD7C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7647F66CE00962FE37B33C1 /* Pods-KVNProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVNProgress-dummy.m"; sourceTree = "<group>"; };
-		D942DC8CB26E23B02A8E55B4 /* Pods-Groot-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Groot-Private.xcconfig"; sourceTree = "<group>"; };
-		D9432B2D67390342E601B169 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
-		E0DF1820138FC503E916E744 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E26148C254AF06A8694B9D0A /* Pods-Groot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Groot.modulemap"; sourceTree = "<group>"; };
-		ED98953191A6369D44D7EC7A /* Pods-KVNProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVNProgress-prefix.pch"; sourceTree = "<group>"; };
-		F08549D64D1165FB6AE78AF1 /* GRTValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTValueTransformer.m; path = Groot/Private/GRTValueTransformer.m; sourceTree = "<group>"; };
-		F486859A7B3B5E070105A15D /* GRTJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTJSONSerialization.h; path = Groot/GRTJSONSerialization.h; sourceTree = "<group>"; };
-		F815BC8DE7ACBD100DEE28DC /* Pods-KVNProgress-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVNProgress-Private.xcconfig"; sourceTree = "<group>"; };
-		F8CC9B76E246DBD92B6E4040 /* GRTManagedStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTManagedStore.m; path = Groot/GRTManagedStore.m; sourceTree = "<group>"; };
+		020D18181FD3F1246C145476 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0267F003C03920C717019586 /* NSManagedObject+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Groot.m"; path = "Groot/Private/NSManagedObject+Groot.m"; sourceTree = "<group>"; };
+		0764D9CA5C83E1AAFA2CC67A /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNEmpty.h"; path = "KVNProgress/Categories/UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
+		08C6815ECBC6811FA6284B56 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B475FA831E80117F783557E /* KVNProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgress.h; path = KVNProgress/Classes/KVNProgress.h; sourceTree = "<group>"; };
+		0BC2977C3836EA744035A122 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120D3951651EC0F6FDDFEFB6 /* Pods-THLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THLabel.xcconfig"; sourceTree = "<group>"; };
+		128CDF7B239FD681DFD45C09 /* Pods-KVNProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KVNProgress-dummy.m"; sourceTree = "<group>"; };
+		18EA4F8B936DC1B4FB20DF62 /* NSValueTransformer+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+Groot.h"; path = "Groot/NSValueTransformer+Groot.h"; sourceTree = "<group>"; };
+		1DFABE0BD7AD42DB1580507A /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgress.m; path = KVNProgress/Classes/KVNProgress.m; sourceTree = "<group>"; };
+		2081018CD28FF3269A7E5EBF /* Pods-Groot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Groot-umbrella.h"; sourceTree = "<group>"; };
+		288AB08AC0A06484EECE877D /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		2972A6E84F46353A892D6719 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		2985C69DB09A2BB0291426FE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		2C60DEFDCCFC3FD7866A20EC /* Pods-THLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-THLabel.modulemap"; sourceTree = "<group>"; };
+		2DAFA8F8B3F877B6196B9397 /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KVNContrast.m"; path = "KVNProgress/Categories/UIColor+KVNContrast.m"; sourceTree = "<group>"; };
+		2F01307F96F547B67716472A /* Pods-THLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-THLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		3577CD5169B2B16CA354B667 /* THLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C21B152BC3850DE64D83A5A /* Pods-KVNProgress-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVNProgress-Private.xcconfig"; sourceTree = "<group>"; };
+		3CF4DA35659DB3992395718D /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D2850C14B98DBD7942444A9 /* THLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = THLabel.h; path = THLabel/THLabel.h; sourceTree = "<group>"; };
+		3E9E6C656C7DC2C18AA4D376 /* Groot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Groot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB257D114B4175C905A3E81 /* GRTJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTJSONSerialization.h; path = Groot/GRTJSONSerialization.h; sourceTree = "<group>"; };
+		4090B1C16F978D023AC33C5D /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNImageEffects.h"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
+		40F04FD3B1618C17AC4866EA /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgressConfiguration.h; path = KVNProgress/Classes/KVNProgressConfiguration.h; sourceTree = "<group>"; };
+		466FC913BE79DA311AE3E314 /* NSValueTransformer+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+Groot.m"; path = "Groot/NSValueTransformer+Groot.m"; sourceTree = "<group>"; };
+		4728F54E63580CF81AC74BC9 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNImageEffects.m"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		487DA861BDE9EED0E04BD906 /* GRTValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTValueTransformer.h; path = Groot/Private/GRTValueTransformer.h; sourceTree = "<group>"; };
+		4E2F2F4F77972A5E4B0E89FE /* Groot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Groot.swift; path = Groot/Groot.swift; sourceTree = "<group>"; };
+		4EBFBB2391218C49B979788B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		52CE48A55CCC188442B63AAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A28EE0625C104DC97394B0B /* NSPropertyDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyDescription+Groot.h"; path = "Groot/Private/NSPropertyDescription+Groot.h"; sourceTree = "<group>"; };
+		5ACF41CE648FA088892044C6 /* Pods-Groot-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Groot-Private.xcconfig"; sourceTree = "<group>"; };
+		5C62C5712A7B5780E3476657 /* Pods-KVNProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KVNProgress.modulemap"; sourceTree = "<group>"; };
+		5E61B22094B4E04CAA04A011 /* Pods-THLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THLabel-umbrella.h"; sourceTree = "<group>"; };
+		6253119707D0A1836EAA10DB /* Pods-THLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-THLabel-dummy.m"; sourceTree = "<group>"; };
+		6B1CA92681D0BB8EDB8822FD /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		75B66BA74EF3CD4DB9D8D716 /* Pods-KVNProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KVNProgress.xcconfig"; sourceTree = "<group>"; };
+		766313CC9164F4DE9B716934 /* NSEntityDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+Groot.h"; path = "Groot/Private/NSEntityDescription+Groot.h"; sourceTree = "<group>"; };
+		775C4E0663DE438C3A645AC1 /* GRTValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTValueTransformer.m; path = Groot/Private/GRTValueTransformer.m; sourceTree = "<group>"; };
+		78737B01D2406EBF9531AE8E /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
+		7A95C4D66EA1116716796C25 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		7BE6696B44569EF792034893 /* GRTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTError.h; path = Groot/GRTError.h; sourceTree = "<group>"; };
+		8358F24FB31616A655926D4C /* THLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = THLabel.m; path = THLabel/THLabel.m; sourceTree = "<group>"; };
+		86600A2DEDF1CB6529DDC400 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		86F68AB47B96991A5CAB4FFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		89493CC6A07A292C9B4378CF /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNEmpty.m"; path = "KVNProgress/Categories/UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
+		8C86CC48AFE394B9A2BE8E41 /* NSAttributeDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+Groot.h"; path = "Groot/Private/NSAttributeDescription+Groot.h"; sourceTree = "<group>"; };
+		8FE560DFE59B6877FBAD70C4 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		9902B5E65C5C2DCC38144090 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		993F5434C105F0E2F62B1A34 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		9AE1C95D823290BC5FB54E65 /* NSManagedObject+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Groot.h"; path = "Groot/Private/NSManagedObject+Groot.h"; sourceTree = "<group>"; };
+		9E4E61D944AED23F1CB2A148 /* NSPropertyDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPropertyDescription+Groot.m"; path = "Groot/Private/NSPropertyDescription+Groot.m"; sourceTree = "<group>"; };
+		A5F53B0F8F96297E16184FB7 /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgressConfiguration.m; path = KVNProgress/Classes/KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		A6351CE9D2461E5D5C7B6672 /* GRTManagedStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTManagedStore.m; path = Groot/GRTManagedStore.m; sourceTree = "<group>"; };
+		AC30A928C655399C23B91122 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		ADA4399BAC83BE94517405FF /* NSAttributeDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+Groot.m"; path = "Groot/Private/NSAttributeDescription+Groot.m"; sourceTree = "<group>"; };
+		B717089EE29D8B8B0B69B8AB /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KVNProgressView.xib; path = KVNProgress/Resources/KVNProgressView.xib; sourceTree = "<group>"; };
+		B9A2E3D00FC54A6E63C2125D /* GRTManagedStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTManagedStore.h; path = Groot/GRTManagedStore.h; sourceTree = "<group>"; };
+		BA13ABE898FC1F5118BDA5C7 /* Pods-Groot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Groot.xcconfig"; sourceTree = "<group>"; };
+		BC0C70D3330BA80D8D4F616B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC714D214499E530A4FDD141 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C4109B30795EE6184397F2CD /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C48F16B8125CE05937969405 /* Pods-KVNProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVNProgress-umbrella.h"; sourceTree = "<group>"; };
+		C56F3633FF99DBD19B5B1916 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75FB306F323D082375E7DF4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		CC3DF2A43286CB0F326E5A8E /* GRTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTError.m; path = Groot/GRTError.m; sourceTree = "<group>"; };
+		D2264E75CE68035BD33F9FB8 /* GRTJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTJSONSerialization.m; path = Groot/GRTJSONSerialization.m; sourceTree = "<group>"; };
+		D41B7299AAC33C67CE8FDD47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53E84AB1EB368FBB36DCF54 /* NSEntityDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+Groot.m"; path = "Groot/Private/NSEntityDescription+Groot.m"; sourceTree = "<group>"; };
+		D5F40514A646650EC435BE1C /* Pods-Groot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Groot-dummy.m"; sourceTree = "<group>"; };
+		DDFFDCD9FEACFF2AFB059EBD /* Pods-THLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-THLabel-prefix.pch"; sourceTree = "<group>"; };
+		E335A37D4A81F8F702E0FA82 /* NSValueTransformer+Groot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSValueTransformer+Groot.swift"; path = "Groot/NSValueTransformer+Groot.swift"; sourceTree = "<group>"; };
+		E8FFA91F2E16657F25E448E3 /* Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Groot.h; path = Groot/Groot.h; sourceTree = "<group>"; };
+		ED2425770B10142E3276439E /* Pods-Groot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Groot.modulemap"; sourceTree = "<group>"; };
+		ED849177B4ED582535C34149 /* Pods-KVNProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KVNProgress-prefix.pch"; sourceTree = "<group>"; };
+		FC4C438E6AE74A00772B993E /* Pods-Groot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Groot-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		59949AA26894539B54B273EC /* Frameworks */ = {
+		A673E31A081815618D9112BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				208BB165E6EB16FC417D54FA /* CoreText.framework in Frameworks */,
-				E34B86195AE0002ABFD74B05 /* Foundation.framework in Frameworks */,
+				2D1DC6DA3E6BC0CDDBED086A /* Foundation.framework in Frameworks */,
+				5B1EB0BF34A0131666C0E1C2 /* GLKit.framework in Frameworks */,
+				6CB3737B9F32159DEA8CA1BC /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D9A6CC935B238274FA4C4EE /* Frameworks */ = {
+		D6C594B80AFB8861D9BFEB21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1537F755B71DEBC06A2743 /* Foundation.framework in Frameworks */,
-				46E29D5792EF6EB3905316E6 /* GLKit.framework in Frameworks */,
-				073A632103E7D9056780A47E /* QuartzCore.framework in Frameworks */,
+				A18B74057F4412DCB5941C27 /* CoreData.framework in Frameworks */,
+				1A573424345260A6B9159CA4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E36B48B7D2965A0BB65E06B6 /* Frameworks */ = {
+		EBD27D5F5E1B43ED894F691B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1322F4C8AB253B70D80B4AB8 /* Foundation.framework in Frameworks */,
+				252530373AE9A76A00F70C6A /* CoreText.framework in Frameworks */,
+				D2E88F76C7178D8ECDA98E16 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC1DA9DCA9AC3133B058FF3B /* Frameworks */ = {
+		FA8A7BAC41D3E3733139DF3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3BAB28A78CB0BAD5EE3504C /* CoreData.framework in Frameworks */,
-				3D25AC0D4FD991B2C3945C9F /* Foundation.framework in Frameworks */,
+				763D921B9DE0E7CC2088D5A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06666C1BF410802948819EF0 = {
+		1B4215DFF1A50D1690201D92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				668A1A0B9A2887AE0B90D098 /* Podfile */,
-				D6A712C7413C317C5814756C /* Frameworks */,
-				BD12D079BCB9E70623ACE850 /* Pods */,
-				B266916743900248B964182D /* Products */,
-				4D2A4A07F840A94012C194AA /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		144D71FC93C31EA387F3C64D /* KVNProgress */ = {
-			isa = PBXGroup;
-			children = (
-				17265D04BE12B9A0675E4753 /* KVNProgress.h */,
-				716A5FD7E723F3003D5DF698 /* KVNProgress.m */,
-				76405DE69D3D844B2DA7F907 /* KVNProgressConfiguration.h */,
-				A792EFE9AB55A3BD65D0CD31 /* KVNProgressConfiguration.m */,
-				9E00264B04C6E0FE45914369 /* UIColor+KVNContrast.h */,
-				65BBDCBE701CC576A0932E08 /* UIColor+KVNContrast.m */,
-				1A7AE1751CD9277C4178DE90 /* UIImage+KVNEmpty.h */,
-				31AFDA6791D0372FE2EFFC56 /* UIImage+KVNEmpty.m */,
-				90596287E0A2F0412459F942 /* UIImage+KVNImageEffects.h */,
-				19BF2F169DB3DAA47B20BDD0 /* UIImage+KVNImageEffects.m */,
-				945FF4CE8DED4D3A6E35E557 /* Resources */,
-				2CBF30C011486D9180287B65 /* Support Files */,
-			);
-			path = KVNProgress;
-			sourceTree = "<group>";
-		};
-		2CBF30C011486D9180287B65 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5010D84BC940BF1ACEC4BDA9 /* Info.plist */,
-				42DBB7B13B5B3655012A9C57 /* Pods-KVNProgress.modulemap */,
-				11657D8A373F44F808953042 /* Pods-KVNProgress.xcconfig */,
-				F815BC8DE7ACBD100DEE28DC /* Pods-KVNProgress-Private.xcconfig */,
-				D7647F66CE00962FE37B33C1 /* Pods-KVNProgress-dummy.m */,
-				ED98953191A6369D44D7EC7A /* Pods-KVNProgress-prefix.pch */,
-				C411285C294F3C15B19F0E92 /* Pods-KVNProgress-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-KVNProgress";
-			sourceTree = "<group>";
-		};
-		33D87ED9F03635FE9A90EE3F /* Groot */ = {
-			isa = PBXGroup;
-			children = (
-				7F653964F406EC785DDFA464 /* Support Files */,
-				9E88942120715BFCBE1A113A /* Swift */,
-			);
-			path = Groot;
-			sourceTree = "<group>";
-		};
-		3A9F6B6B17067BD8D6818E4E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9ED37931271C6C36D298F49B /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4C30B745F3EEAAF2E8B1696A /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				476304D11BE27315776F1205 /* CoreData.framework */,
-				5EB6E2878B8C91CEC79906B3 /* CoreText.framework */,
-				1881BEA94DF8D3639434C6F0 /* Foundation.framework */,
-				D9432B2D67390342E601B169 /* GLKit.framework */,
-				349F9DA6DB23A1A897016223 /* QuartzCore.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		4D2A4A07F840A94012C194AA /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				502E238DB6D7702821734F85 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		502E238DB6D7702821734F85 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9BAE5409B073B95DF444C610 /* Info.plist */,
-				675CC10ED5864592117E5605 /* Pods.modulemap */,
-				CFF822686AE6523601D7FD7C /* Pods-acknowledgements.markdown */,
-				1172098A060ED8246A7BE728 /* Pods-acknowledgements.plist */,
-				549E7953B588E7270C02B0CF /* Pods-dummy.m */,
-				1FAACA36C164707AE668211F /* Pods-environment.h */,
-				5CB9746C2A489CB0D9C0D9B9 /* Pods-frameworks.sh */,
-				180EF75A17576106EEDE1109 /* Pods-resources.sh */,
-				9DED7E04E4B5E200259D78E2 /* Pods-umbrella.h */,
-				24412D71BEA436752169CCC6 /* Pods.debug.xcconfig */,
-				2D9BAE0559D2FA7FF07859B1 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			path = "Target Support Files/Pods";
-			sourceTree = "<group>";
-		};
-		5B79C7081596F18C10F5D915 /* Google-Mobile-Ads-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				3A9F6B6B17067BD8D6818E4E /* Frameworks */,
-			);
-			path = "Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		7F653964F406EC785DDFA464 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ADEF8A660BC7F1D9ED495A30 /* Info.plist */,
-				E26148C254AF06A8694B9D0A /* Pods-Groot.modulemap */,
-				C9748F16602A378E395D85E4 /* Pods-Groot.xcconfig */,
-				D942DC8CB26E23B02A8E55B4 /* Pods-Groot-Private.xcconfig */,
-				ADC470A82BFDCA10FFFFBFC4 /* Pods-Groot-dummy.m */,
-				CD3937D5498C32576510C13D /* Pods-Groot-prefix.pch */,
-				62F5A6BD271D8E53AA085544 /* Pods-Groot-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Groot";
-			sourceTree = "<group>";
-		};
-		945FF4CE8DED4D3A6E35E557 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				9CBF83F7CC19D7AC72482359 /* KVNProgressView.xib */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		9E88942120715BFCBE1A113A /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				1865494BC58ADDB0BB948FD6 /* GRTError.h */,
-				9113F047964076243BAF75E0 /* GRTError.m */,
-				F486859A7B3B5E070105A15D /* GRTJSONSerialization.h */,
-				1846CEF6381BECB879E0828C /* GRTJSONSerialization.m */,
-				4B16C722640610893C0DFF19 /* GRTManagedStore.h */,
-				F8CC9B76E246DBD92B6E4040 /* GRTManagedStore.m */,
-				4C1E195332283847D7CD1CB0 /* GRTValueTransformer.h */,
-				F08549D64D1165FB6AE78AF1 /* GRTValueTransformer.m */,
-				0AFA8AD1F1306555FFFFB7B8 /* Groot.h */,
-				9B03F1376E25947553941016 /* Groot.swift */,
-				1BB136D6A430BE78276F5383 /* NSAttributeDescription+Groot.h */,
-				561166163B2116BC20E92416 /* NSAttributeDescription+Groot.m */,
-				186C262271284CC1A84BE6AC /* NSEntityDescription+Groot.h */,
-				796B7BBF487B48EF8D783844 /* NSEntityDescription+Groot.m */,
-				1FBA53FC44C472C165727536 /* NSManagedObject+Groot.h */,
-				842948E4F350400CA145DAE6 /* NSManagedObject+Groot.m */,
-				231AEEA23C8928D82228A105 /* NSPropertyDescription+Groot.h */,
-				6C25DDE387DC22D00FDFF6FE /* NSPropertyDescription+Groot.m */,
-				09150253ABCF01BBFFD55AEE /* NSValueTransformer+Groot.h */,
-				7CE70CE959175532222BB4CB /* NSValueTransformer+Groot.m */,
-				2D2F78FFCD6607C102609307 /* NSValueTransformer+Groot.swift */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
-		B266916743900248B964182D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A36B1D7284598B8C19C02AE2 /* Groot.framework */,
-				E0DF1820138FC503E916E744 /* KVNProgress.framework */,
-				0D4A7B1E9185C1892358CFDE /* Pods.framework */,
-				09E08A7DC0C13C1F56809850 /* THLabel.framework */,
+				3E9E6C656C7DC2C18AA4D376 /* Groot.framework */,
+				3CF4DA35659DB3992395718D /* KVNProgress.framework */,
+				08C6815ECBC6811FA6284B56 /* Pods.framework */,
+				3577CD5169B2B16CA354B667 /* THLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD12D079BCB9E70623ACE850 /* Pods */ = {
+		24A80464240858069829BEBC /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5B79C7081596F18C10F5D915 /* Google-Mobile-Ads-SDK */,
-				33D87ED9F03635FE9A90EE3F /* Groot */,
-				144D71FC93C31EA387F3C64D /* KVNProgress */,
-				FE12A759010C3D470D41B02E /* THLabel */,
+				C75FB306F323D082375E7DF4 /* CoreData.framework */,
+				2985C69DB09A2BB0291426FE /* CoreText.framework */,
+				020D18181FD3F1246C145476 /* Foundation.framework */,
+				4EBFBB2391218C49B979788B /* GLKit.framework */,
+				86F68AB47B96991A5CAB4FFF /* QuartzCore.framework */,
 			);
-			name = Pods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D6A712C7413C317C5814756C /* Frameworks */ = {
+		377DA9AE11B39CD190720E22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C30B745F3EEAAF2E8B1696A /* iOS */,
+				24A80464240858069829BEBC /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E764E7F2226F842B3FAFD4F4 /* Support Files */ = {
+		4204FA6D7986743FDBBE6578 = {
 			isa = PBXGroup;
 			children = (
-				2CF0605FEC17CADB7C5BBAB6 /* Info.plist */,
-				8718CB6401704D7ACDDB2E90 /* Pods-THLabel.modulemap */,
-				6BFE58E8F2AAF2BEE2C6E8FF /* Pods-THLabel.xcconfig */,
-				CE204017AE3F7F324E80096A /* Pods-THLabel-Private.xcconfig */,
-				27E3E67972C9BECA3E14478E /* Pods-THLabel-dummy.m */,
-				4CFA2B06FCE67C1CBC4E629C /* Pods-THLabel-prefix.pch */,
-				6EBFEE329E08F959119FCD17 /* Pods-THLabel-umbrella.h */,
+				BC0C70D3330BA80D8D4F616B /* Podfile */,
+				377DA9AE11B39CD190720E22 /* Frameworks */,
+				69C0EFB8E4285E5D44870138 /* Pods */,
+				1B4215DFF1A50D1690201D92 /* Products */,
+				C36C11C8CB930D4731E15E2E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		431D6CB26841B33FA2E758E6 /* Groot */ = {
+			isa = PBXGroup;
+			children = (
+				EE6E9CB8F56513BC4D5A8D42 /* Support Files */,
+				C1CF211E38EE94BB69A83CDC /* Swift */,
+			);
+			path = Groot;
+			sourceTree = "<group>";
+		};
+		46F63F4E6D50999FEE8040BB /* THLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3D2850C14B98DBD7942444A9 /* THLabel.h */,
+				8358F24FB31616A655926D4C /* THLabel.m */,
+				529F4A1211A3C8356D8B7485 /* Support Files */,
+			);
+			path = THLabel;
+			sourceTree = "<group>";
+		};
+		529F4A1211A3C8356D8B7485 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				52CE48A55CCC188442B63AAE /* Info.plist */,
+				2C60DEFDCCFC3FD7866A20EC /* Pods-THLabel.modulemap */,
+				120D3951651EC0F6FDDFEFB6 /* Pods-THLabel.xcconfig */,
+				2F01307F96F547B67716472A /* Pods-THLabel-Private.xcconfig */,
+				6253119707D0A1836EAA10DB /* Pods-THLabel-dummy.m */,
+				DDFFDCD9FEACFF2AFB059EBD /* Pods-THLabel-prefix.pch */,
+				5E61B22094B4E04CAA04A011 /* Pods-THLabel-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-THLabel";
 			sourceTree = "<group>";
 		};
-		FE12A759010C3D470D41B02E /* THLabel */ = {
+		69C0EFB8E4285E5D44870138 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3A014BC05CBCAA85BE2873CD /* THLabel.h */,
-				10215708072E659D8981FF75 /* THLabel.m */,
-				E764E7F2226F842B3FAFD4F4 /* Support Files */,
+				9E009C13B030696FBE11400E /* Google-Mobile-Ads-SDK */,
+				431D6CB26841B33FA2E758E6 /* Groot */,
+				F9F2FC3B5E9A6BC10FE83CD6 /* KVNProgress */,
+				46F63F4E6D50999FEE8040BB /* THLabel */,
 			);
-			path = THLabel;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E009C13B030696FBE11400E /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F27415186F5646478445A47C /* Frameworks */,
+			);
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		C1CF211E38EE94BB69A83CDC /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				7BE6696B44569EF792034893 /* GRTError.h */,
+				CC3DF2A43286CB0F326E5A8E /* GRTError.m */,
+				3FB257D114B4175C905A3E81 /* GRTJSONSerialization.h */,
+				D2264E75CE68035BD33F9FB8 /* GRTJSONSerialization.m */,
+				B9A2E3D00FC54A6E63C2125D /* GRTManagedStore.h */,
+				A6351CE9D2461E5D5C7B6672 /* GRTManagedStore.m */,
+				487DA861BDE9EED0E04BD906 /* GRTValueTransformer.h */,
+				775C4E0663DE438C3A645AC1 /* GRTValueTransformer.m */,
+				E8FFA91F2E16657F25E448E3 /* Groot.h */,
+				4E2F2F4F77972A5E4B0E89FE /* Groot.swift */,
+				8C86CC48AFE394B9A2BE8E41 /* NSAttributeDescription+Groot.h */,
+				ADA4399BAC83BE94517405FF /* NSAttributeDescription+Groot.m */,
+				766313CC9164F4DE9B716934 /* NSEntityDescription+Groot.h */,
+				D53E84AB1EB368FBB36DCF54 /* NSEntityDescription+Groot.m */,
+				9AE1C95D823290BC5FB54E65 /* NSManagedObject+Groot.h */,
+				0267F003C03920C717019586 /* NSManagedObject+Groot.m */,
+				5A28EE0625C104DC97394B0B /* NSPropertyDescription+Groot.h */,
+				9E4E61D944AED23F1CB2A148 /* NSPropertyDescription+Groot.m */,
+				18EA4F8B936DC1B4FB20DF62 /* NSValueTransformer+Groot.h */,
+				466FC913BE79DA311AE3E314 /* NSValueTransformer+Groot.m */,
+				E335A37D4A81F8F702E0FA82 /* NSValueTransformer+Groot.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		C36C11C8CB930D4731E15E2E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC51D8DD0215038A2F055C63 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CC51D8DD0215038A2F055C63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D41B7299AAC33C67CE8FDD47 /* Info.plist */,
+				86600A2DEDF1CB6529DDC400 /* Pods.modulemap */,
+				BC714D214499E530A4FDD141 /* Pods-acknowledgements.markdown */,
+				8FE560DFE59B6877FBAD70C4 /* Pods-acknowledgements.plist */,
+				C4109B30795EE6184397F2CD /* Pods-dummy.m */,
+				6B1CA92681D0BB8EDB8822FD /* Pods-environment.h */,
+				288AB08AC0A06484EECE877D /* Pods-frameworks.sh */,
+				7A95C4D66EA1116716796C25 /* Pods-resources.sh */,
+				AC30A928C655399C23B91122 /* Pods-umbrella.h */,
+				2972A6E84F46353A892D6719 /* Pods.debug.xcconfig */,
+				9902B5E65C5C2DCC38144090 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		E774CB5F6C8E1E3FC08B0236 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B717089EE29D8B8B0B69B8AB /* KVNProgressView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EE6E9CB8F56513BC4D5A8D42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56F3633FF99DBD19B5B1916 /* Info.plist */,
+				ED2425770B10142E3276439E /* Pods-Groot.modulemap */,
+				BA13ABE898FC1F5118BDA5C7 /* Pods-Groot.xcconfig */,
+				5ACF41CE648FA088892044C6 /* Pods-Groot-Private.xcconfig */,
+				D5F40514A646650EC435BE1C /* Pods-Groot-dummy.m */,
+				FC4C438E6AE74A00772B993E /* Pods-Groot-prefix.pch */,
+				2081018CD28FF3269A7E5EBF /* Pods-Groot-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Groot";
+			sourceTree = "<group>";
+		};
+		F27415186F5646478445A47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				993F5434C105F0E2F62B1A34 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9F2FC3B5E9A6BC10FE83CD6 /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				0B475FA831E80117F783557E /* KVNProgress.h */,
+				1DFABE0BD7AD42DB1580507A /* KVNProgress.m */,
+				40F04FD3B1618C17AC4866EA /* KVNProgressConfiguration.h */,
+				A5F53B0F8F96297E16184FB7 /* KVNProgressConfiguration.m */,
+				78737B01D2406EBF9531AE8E /* UIColor+KVNContrast.h */,
+				2DAFA8F8B3F877B6196B9397 /* UIColor+KVNContrast.m */,
+				0764D9CA5C83E1AAFA2CC67A /* UIImage+KVNEmpty.h */,
+				89493CC6A07A292C9B4378CF /* UIImage+KVNEmpty.m */,
+				4090B1C16F978D023AC33C5D /* UIImage+KVNImageEffects.h */,
+				4728F54E63580CF81AC74BC9 /* UIImage+KVNImageEffects.m */,
+				E774CB5F6C8E1E3FC08B0236 /* Resources */,
+				FA8FC7808C4F09C54701BF09 /* Support Files */,
+			);
+			path = KVNProgress;
+			sourceTree = "<group>";
+		};
+		FA8FC7808C4F09C54701BF09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BC2977C3836EA744035A122 /* Info.plist */,
+				5C62C5712A7B5780E3476657 /* Pods-KVNProgress.modulemap */,
+				75B66BA74EF3CD4DB9D8D716 /* Pods-KVNProgress.xcconfig */,
+				3C21B152BC3850DE64D83A5A /* Pods-KVNProgress-Private.xcconfig */,
+				128CDF7B239FD681DFD45C09 /* Pods-KVNProgress-dummy.m */,
+				ED849177B4ED582535C34149 /* Pods-KVNProgress-prefix.pch */,
+				C48F16B8125CE05937969405 /* Pods-KVNProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-KVNProgress";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F0636CBE41FFE2DAC3678D7 /* Headers */ = {
+		28BD0DC7C059C49A416F0065 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5D5E7D3296D38C90BFADDC7 /* GRTError.h in Headers */,
-				6815365A59332958E212865D /* GRTJSONSerialization.h in Headers */,
-				6144B6AC02C048B4CD091510 /* GRTManagedStore.h in Headers */,
-				A024CE2B277F87E6C010782E /* GRTValueTransformer.h in Headers */,
-				BDCBE1A11CDA8464DEE0614E /* Groot.h in Headers */,
-				F66B0E2159F95310EE74ABB3 /* NSAttributeDescription+Groot.h in Headers */,
-				BB01B2902FE9C61A5EE5FF4C /* NSEntityDescription+Groot.h in Headers */,
-				23DDF2E7054AFE44508456A1 /* NSManagedObject+Groot.h in Headers */,
-				1C6164496735520DF2422375 /* NSPropertyDescription+Groot.h in Headers */,
-				E48B563F7D200D373E725AFC /* NSValueTransformer+Groot.h in Headers */,
-				3A8DAA13CEFB1BD112A1BF9D /* Pods-Groot-umbrella.h in Headers */,
+				761D3E8D692EF4272CB18C8D /* Pods-THLabel-umbrella.h in Headers */,
+				CB7F6714705B12D750CACBC9 /* THLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		207FCADEF2D4A5871D749FC8 /* Headers */ = {
+		2D13EA45777F9AF19ABA484E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F50DD276125DC8FF63EA73D /* KVNProgress.h in Headers */,
-				1B9069A69AF8A9765AADA316 /* KVNProgressConfiguration.h in Headers */,
-				8C331F072E0F9E7FA7899BE9 /* Pods-KVNProgress-umbrella.h in Headers */,
-				A66AB445EE42BFAADD271400 /* UIColor+KVNContrast.h in Headers */,
-				2E96E2E313ACEBC6E271E0B8 /* UIImage+KVNEmpty.h in Headers */,
-				C2FC381351B2A6441333F79F /* UIImage+KVNImageEffects.h in Headers */,
+				0CEF2820F73390E437E6F86C /* GRTError.h in Headers */,
+				DFAD2E3B0ECBFFC473836C66 /* GRTJSONSerialization.h in Headers */,
+				F821B4A24D22C87555CFD1C1 /* GRTManagedStore.h in Headers */,
+				92D3224F2FC8FF36E6097E3C /* GRTValueTransformer.h in Headers */,
+				A058D1BC69A7707DF9AB404B /* Groot.h in Headers */,
+				75C64C36D2CD154E66716715 /* NSAttributeDescription+Groot.h in Headers */,
+				26E90E1FE058C307C8CD6539 /* NSEntityDescription+Groot.h in Headers */,
+				52BE19A7A3A0F3EE6B5F8F24 /* NSManagedObject+Groot.h in Headers */,
+				F525E8EEA4DC6DB1265C8130 /* NSPropertyDescription+Groot.h in Headers */,
+				CA704C7264A3A7872B57228E /* NSValueTransformer+Groot.h in Headers */,
+				B3E48D711AE7122A31E88B20 /* Pods-Groot-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0232959839CBA2FEB57A254 /* Headers */ = {
+		3DF03791035708D196EA75B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				795DEBD4A193550B8A136AA0 /* Pods-umbrella.h in Headers */,
+				D31B3FA8C2F6FF7F0933B01A /* Pods-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B765FAEF38B4184B9D295A2E /* Headers */ = {
+		AA579DECA36DA1A2470AC7F4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F3C26995FEBC0C325532747 /* Pods-THLabel-umbrella.h in Headers */,
-				653767AC8219E13CC907DC79 /* THLabel.h in Headers */,
+				B1695DD9AEA9232412DC7D5C /* KVNProgress.h in Headers */,
+				A3D9D7B77993B547B0CDEDA0 /* KVNProgressConfiguration.h in Headers */,
+				FED7C1CD995D0E1092E567FD /* Pods-KVNProgress-umbrella.h in Headers */,
+				8F5FB78C03584E3B13C2D355 /* UIColor+KVNContrast.h in Headers */,
+				C519FD7664AEE2ED62595DA8 /* UIImage+KVNEmpty.h in Headers */,
+				D092AC30A7C4D1772DD43369 /* UIImage+KVNImageEffects.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7DB74F9B86DB5845A196FAAA /* Pods */ = {
+		581BBA898D24F360DED4FC3F /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74F13C592EB0637F649C2B7F /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = AE7BE48B0E19E507351CD340 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				C00467409586964C909D71A8 /* Sources */,
-				E36B48B7D2965A0BB65E06B6 /* Frameworks */,
-				A0232959839CBA2FEB57A254 /* Headers */,
+				60CD19F90493CCEA6980EDC0 /* Sources */,
+				FA8A7BAC41D3E3733139DF3E /* Frameworks */,
+				3DF03791035708D196EA75B0 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				49FD02D9DF635DE5CB5D33D1 /* PBXTargetDependency */,
-				4818E5D1C562E1FDC744FE91 /* PBXTargetDependency */,
-				1EEAE82926B8EB05A8A6DDD2 /* PBXTargetDependency */,
+				2C221DD272179533CE16ED48 /* PBXTargetDependency */,
+				D07D19D74098C8E24F3CA37F /* PBXTargetDependency */,
+				53038AE1E78125CA5766514B /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
-			productReference = 0D4A7B1E9185C1892358CFDE /* Pods.framework */;
+			productReference = 08C6815ECBC6811FA6284B56 /* Pods.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B0713810F3EF92AFD0A40292 /* Pods-KVNProgress */ = {
+		68C7F6007755EB0488AA3F10 /* Pods-THLabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18F78BEE356F130B367484AB /* Build configuration list for PBXNativeTarget "Pods-KVNProgress" */;
+			buildConfigurationList = AA4AF7F51EED6C341E156BEF /* Build configuration list for PBXNativeTarget "Pods-THLabel" */;
 			buildPhases = (
-				7AA47ABC880E8A22BDC02794 /* Sources */,
-				9D9A6CC935B238274FA4C4EE /* Frameworks */,
-				207FCADEF2D4A5871D749FC8 /* Headers */,
-				04F66106DCBD398924AE91C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-KVNProgress";
-			productName = "Pods-KVNProgress";
-			productReference = E0DF1820138FC503E916E744 /* KVNProgress.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D09B2D3554BC7190D891586B /* Pods-Groot */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D95F3362C4FABAD955528572 /* Build configuration list for PBXNativeTarget "Pods-Groot" */;
-			buildPhases = (
-				A8498AEF9E462C999FCBD67D /* Sources */,
-				EC1DA9DCA9AC3133B058FF3B /* Frameworks */,
-				0F0636CBE41FFE2DAC3678D7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Groot";
-			productName = "Pods-Groot";
-			productReference = A36B1D7284598B8C19C02AE2 /* Groot.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D8501F38BECA631F525AF74C /* Pods-THLabel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0246FA5329A9EFF823B27FC7 /* Build configuration list for PBXNativeTarget "Pods-THLabel" */;
-			buildPhases = (
-				60102829C0662A95AD03D027 /* Sources */,
-				59949AA26894539B54B273EC /* Frameworks */,
-				B765FAEF38B4184B9D295A2E /* Headers */,
+				858C5BB9971E8DC03A254B57 /* Sources */,
+				EBD27D5F5E1B43ED894F691B /* Frameworks */,
+				28BD0DC7C059C49A416F0065 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -541,125 +506,214 @@
 			);
 			name = "Pods-THLabel";
 			productName = "Pods-THLabel";
-			productReference = 09E08A7DC0C13C1F56809850 /* THLabel.framework */;
+			productReference = 3577CD5169B2B16CA354B667 /* THLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		723D853B21BCC2FD500183B7 /* Pods-KVNProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BDB38D5077F66D1D0EC833E /* Build configuration list for PBXNativeTarget "Pods-KVNProgress" */;
+			buildPhases = (
+				3BD65380D404EAEEBF0DCEA1 /* Sources */,
+				A673E31A081815618D9112BC /* Frameworks */,
+				AA579DECA36DA1A2470AC7F4 /* Headers */,
+				923D22E47158A35939448626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KVNProgress";
+			productName = "Pods-KVNProgress";
+			productReference = 3CF4DA35659DB3992395718D /* KVNProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9E4F94925042125FF4F78C5 /* Pods-Groot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E461ACDE6FEE43E7879A19 /* Build configuration list for PBXNativeTarget "Pods-Groot" */;
+			buildPhases = (
+				A584553E9C424345BBB0B26C /* Sources */,
+				D6C594B80AFB8861D9BFEB21 /* Frameworks */,
+				2D13EA45777F9AF19ABA484E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Groot";
+			productName = "Pods-Groot";
+			productReference = 3E9E6C656C7DC2C18AA4D376 /* Groot.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A3FDE5C977E6C84FC3614362 /* Project object */ = {
+		A5726C73B86AB9D0041378DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = DE86CDF6D3D8E01BCC903650 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 163EA53B8843534E3831F8BA /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 06666C1BF410802948819EF0;
-			productRefGroup = B266916743900248B964182D /* Products */;
+			mainGroup = 4204FA6D7986743FDBBE6578;
+			productRefGroup = 1B4215DFF1A50D1690201D92 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DB74F9B86DB5845A196FAAA /* Pods */,
-				D09B2D3554BC7190D891586B /* Pods-Groot */,
-				B0713810F3EF92AFD0A40292 /* Pods-KVNProgress */,
-				D8501F38BECA631F525AF74C /* Pods-THLabel */,
+				581BBA898D24F360DED4FC3F /* Pods */,
+				E9E4F94925042125FF4F78C5 /* Pods-Groot */,
+				723D853B21BCC2FD500183B7 /* Pods-KVNProgress */,
+				68C7F6007755EB0488AA3F10 /* Pods-THLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		04F66106DCBD398924AE91C5 /* Resources */ = {
+		923D22E47158A35939448626 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0392A14E706D954CF79E5F58 /* KVNProgressView.xib in Resources */,
+				89CE5454D2AF9B439CA4B70E /* KVNProgressView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		60102829C0662A95AD03D027 /* Sources */ = {
+		3BD65380D404EAEEBF0DCEA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D9BD4C18BCEBB2283130E3 /* Pods-THLabel-dummy.m in Sources */,
-				6E20B657E9627DF5B667B645 /* THLabel.m in Sources */,
+				735675D0FAE4A547EAC25762 /* KVNProgress.m in Sources */,
+				C02317D240276D787CA1B120 /* KVNProgressConfiguration.m in Sources */,
+				7EF88E5A425E133F10296E63 /* Pods-KVNProgress-dummy.m in Sources */,
+				D77C7EBC1801C53603E2B1B0 /* UIColor+KVNContrast.m in Sources */,
+				6F701753D6E7B47C084794D6 /* UIImage+KVNEmpty.m in Sources */,
+				3D7417B4F45682E366AAF38B /* UIImage+KVNImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AA47ABC880E8A22BDC02794 /* Sources */ = {
+		60CD19F90493CCEA6980EDC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4545EE9469C37849514430A4 /* KVNProgress.m in Sources */,
-				4DD40932C74F67A56C373A2C /* KVNProgressConfiguration.m in Sources */,
-				6058BB90A2D89A4E0B1760A8 /* Pods-KVNProgress-dummy.m in Sources */,
-				3C20FD3261B84F03BB5748EE /* UIColor+KVNContrast.m in Sources */,
-				201B952299652E13B4942795 /* UIImage+KVNEmpty.m in Sources */,
-				6C50588199F5B3FF0E485EEF /* UIImage+KVNImageEffects.m in Sources */,
+				F9385ABE7DE244DB6576E3B3 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8498AEF9E462C999FCBD67D /* Sources */ = {
+		858C5BB9971E8DC03A254B57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				688525E0606C7BDA260421DB /* GRTError.m in Sources */,
-				17C5D2F9766B8D85D47581F5 /* GRTJSONSerialization.m in Sources */,
-				6CABE5AC01961A721CD20CE3 /* GRTManagedStore.m in Sources */,
-				D406ED43D63C9342744C2B23 /* GRTValueTransformer.m in Sources */,
-				7B7FFDAB47C1B1B4FFE5C526 /* Groot.swift in Sources */,
-				39C28ADE26E741992C475653 /* NSAttributeDescription+Groot.m in Sources */,
-				F6641A2FC579D0C0CF46D563 /* NSEntityDescription+Groot.m in Sources */,
-				A45BCC810E6095957338A7E2 /* NSManagedObject+Groot.m in Sources */,
-				1151394F006F8394494A7C66 /* NSPropertyDescription+Groot.m in Sources */,
-				EDF5D60947508867AF9735B2 /* NSValueTransformer+Groot.m in Sources */,
-				2B1AD66C8C87FBAC5A1460DA /* NSValueTransformer+Groot.swift in Sources */,
-				50FAEBD76DAE939D39A9BD26 /* Pods-Groot-dummy.m in Sources */,
+				1726FB25E0246FF6BE75D14B /* Pods-THLabel-dummy.m in Sources */,
+				23CE12AF4EACF9BBE32EA6E2 /* THLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C00467409586964C909D71A8 /* Sources */ = {
+		A584553E9C424345BBB0B26C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				100BF4737944326E4843A1C6 /* Pods-dummy.m in Sources */,
+				D80243B5EB8DA58BEB6552A5 /* GRTError.m in Sources */,
+				57165E63EEE9914E8F09C8AE /* GRTJSONSerialization.m in Sources */,
+				53C9F4CC141A956F5DFB492B /* GRTManagedStore.m in Sources */,
+				FC108FB84708E46054C78E9B /* GRTValueTransformer.m in Sources */,
+				488A5E28D064BB35CDA8ED93 /* Groot.swift in Sources */,
+				A3A3BB2D5B02D0304D4006AB /* NSAttributeDescription+Groot.m in Sources */,
+				D09859BC13CF5699512C4058 /* NSEntityDescription+Groot.m in Sources */,
+				6B44B84447C55B785432617A /* NSManagedObject+Groot.m in Sources */,
+				B9FA6FBED3F016983EEA4AC9 /* NSPropertyDescription+Groot.m in Sources */,
+				620EF06FEDAD7C796EB8D91D /* NSValueTransformer+Groot.m in Sources */,
+				010D0B983D3C8A898B303A39 /* NSValueTransformer+Groot.swift in Sources */,
+				9A916A2F1C40EC651BA0D70B /* Pods-Groot-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1EEAE82926B8EB05A8A6DDD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-THLabel";
-			target = D8501F38BECA631F525AF74C /* Pods-THLabel */;
-			targetProxy = 2355B70C94EA94A37C6B47EE /* PBXContainerItemProxy */;
-		};
-		4818E5D1C562E1FDC744FE91 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-KVNProgress";
-			target = B0713810F3EF92AFD0A40292 /* Pods-KVNProgress */;
-			targetProxy = F4B4A0C11C40F0919ADF1D17 /* PBXContainerItemProxy */;
-		};
-		49FD02D9DF635DE5CB5D33D1 /* PBXTargetDependency */ = {
+		2C221DD272179533CE16ED48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Groot";
-			target = D09B2D3554BC7190D891586B /* Pods-Groot */;
-			targetProxy = 3201FB7FE8DE4C7AC6176B2A /* PBXContainerItemProxy */;
+			target = E9E4F94925042125FF4F78C5 /* Pods-Groot */;
+			targetProxy = 1E22B59E6E26A4807D0176D9 /* PBXContainerItemProxy */;
+		};
+		53038AE1E78125CA5766514B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-THLabel";
+			target = 68C7F6007755EB0488AA3F10 /* Pods-THLabel */;
+			targetProxy = 54D716CFE452C9E36BF41D48 /* PBXContainerItemProxy */;
+		};
+		D07D19D74098C8E24F3CA37F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KVNProgress";
+			target = 723D853B21BCC2FD500183B7 /* Pods-KVNProgress */;
+			targetProxy = 3C410DB54CA9757D0BE147FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		08825577722524AD164BAF23 /* Release */ = {
+		0CE209F8E080DC9EAFBF4FA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D9BAE0559D2FA7FF07859B1 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 2F01307F96F547B67716472A /* Pods-THLabel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-THLabel/Pods-THLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-THLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-THLabel/Pods-THLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = THLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		413E82C54813CE6C1228F2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACF41CE648FA088892044C6 /* Pods-Groot-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Groot/Pods-Groot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Groot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Groot/Pods-Groot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Groot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C127D3572089867DB459F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9902B5E65C5C2DCC38144090 /* Pods.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -686,7 +740,7 @@
 			};
 			name = Release;
 		};
-		1D34C840BD6E93BC14BB86A9 /* Debug */ = {
+		95B16F51387D6CDA897D9EAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -721,177 +775,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2F7231CEA18ECE31CB141568 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE204017AE3F7F324E80096A /* Pods-THLabel-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-THLabel/Pods-THLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-THLabel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-THLabel/Pods-THLabel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = THLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3AE74E36EBF64ED0B939010B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D942DC8CB26E23B02A8E55B4 /* Pods-Groot-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Groot/Pods-Groot-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Groot/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Groot/Pods-Groot.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Groot;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		42E9A906443B71855F10C256 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F815BC8DE7ACBD100DEE28DC /* Pods-KVNProgress-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-KVNProgress/Pods-KVNProgress-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-KVNProgress/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-KVNProgress/Pods-KVNProgress.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KVNProgress;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		49C3218D556558741CCFF6B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24412D71BEA436752169CCC6 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8A1C4380C28C33B333B8833E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE204017AE3F7F324E80096A /* Pods-THLabel-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-THLabel/Pods-THLabel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-THLabel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-THLabel/Pods-THLabel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = THLabel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BB3CBF7B3636C83AE52E05F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D942DC8CB26E23B02A8E55B4 /* Pods-Groot-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Groot/Pods-Groot-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Groot/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Groot/Pods-Groot.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Groot;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BED90BA1804409DBA699B3AD /* Release */ = {
+		A33295155932CF5095347527 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -920,14 +809,42 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_WHOLE_MODULE_OPTIMIZATION = YES;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F2316B2B9F001648890B21A6 /* Debug */ = {
+		BF4E6CEDAE4B2DE0439F4938 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F815BC8DE7ACBD100DEE28DC /* Pods-KVNProgress-Private.xcconfig */;
+			baseConfigurationReference = 2F01307F96F547B67716472A /* Pods-THLabel-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-THLabel/Pods-THLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-THLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-THLabel/Pods-THLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = THLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDF16B55F82433FEE2B8180B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C21B152BC3850DE64D83A5A /* Pods-KVNProgress-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -952,55 +869,140 @@
 			};
 			name = Debug;
 		};
+		D2E9B213F9AB9620B9D50163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C21B152BC3850DE64D83A5A /* Pods-KVNProgress-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-KVNProgress/Pods-KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-KVNProgress/Pods-KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F727E606326934E16128ED8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2972A6E84F46353A892D6719 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8FCCE7AFA66BF716E417F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACF41CE648FA088892044C6 /* Pods-Groot-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Groot/Pods-Groot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Groot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Groot/Pods-Groot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Groot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0246FA5329A9EFF823B27FC7 /* Build configuration list for PBXNativeTarget "Pods-THLabel" */ = {
+		163EA53B8843534E3831F8BA /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F7231CEA18ECE31CB141568 /* Debug */,
-				8A1C4380C28C33B333B8833E /* Release */,
+				95B16F51387D6CDA897D9EAB /* Debug */,
+				A33295155932CF5095347527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18F78BEE356F130B367484AB /* Build configuration list for PBXNativeTarget "Pods-KVNProgress" */ = {
+		3BDB38D5077F66D1D0EC833E /* Build configuration list for PBXNativeTarget "Pods-KVNProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2316B2B9F001648890B21A6 /* Debug */,
-				42E9A906443B71855F10C256 /* Release */,
+				CDF16B55F82433FEE2B8180B /* Debug */,
+				D2E9B213F9AB9620B9D50163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74F13C592EB0637F649C2B7F /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		78E461ACDE6FEE43E7879A19 /* Build configuration list for PBXNativeTarget "Pods-Groot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49C3218D556558741CCFF6B4 /* Debug */,
-				08825577722524AD164BAF23 /* Release */,
+				F8FCCE7AFA66BF716E417F42 /* Debug */,
+				413E82C54813CE6C1228F2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D95F3362C4FABAD955528572 /* Build configuration list for PBXNativeTarget "Pods-Groot" */ = {
+		AA4AF7F51EED6C341E156BEF /* Build configuration list for PBXNativeTarget "Pods-THLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB3CBF7B3636C83AE52E05F3 /* Debug */,
-				3AE74E36EBF64ED0B939010B /* Release */,
+				0CE209F8E080DC9EAFBF4FA8 /* Debug */,
+				BF4E6CEDAE4B2DE0439F4938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE86CDF6D3D8E01BCC903650 /* Build configuration list for PBXProject "Pods" */ = {
+		AE7BE48B0E19E507351CD340 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D34C840BD6E93BC14BB86A9 /* Debug */,
-				BED90BA1804409DBA699B3AD /* Release */,
+				F727E606326934E16128ED8E /* Debug */,
+				7C127D3572089867DB459F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A3FDE5C977E6C84FC3614362 /* Project object */;
+	rootObject = A5726C73B86AB9D0041378DF /* Project object */;
 }

@@ -47,7 +47,7 @@
 		DC0A6A621B7B97140048F108 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC0A6A9A1B7B97E40048F108 /* memefication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = memefication.xcdatamodel; sourceTree = "<group>"; };
 		DC2873FB1B7D106200EEEF87 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		DC2C568E1B79FD670030B2F6 /* memefication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memefication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2C568E1B79FD670030B2F6 /* Meme Fication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meme Fication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2C56921B79FD670030B2F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC2C56931B79FD670030B2F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC2C56951B79FD670030B2F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		DC2C568F1B79FD670030B2F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC2C568E1B79FD670030B2F6 /* memefication.app */,
+				DC2C568E1B79FD670030B2F6 /* Meme Fication.app */,
 				DC2C56AA1B79FD670030B2F6 /* memeficationTests.xctest */,
 			);
 			name = Products;
@@ -215,7 +215,7 @@
 			);
 			name = memefication;
 			productName = memefication;
-			productReference = DC2C568E1B79FD670030B2F6 /* memefication.app */;
+			productReference = DC2C568E1B79FD670030B2F6 /* Meme Fication.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DC2C56A91B79FD670030B2F6 /* memeficationTests */ = {
@@ -410,7 +410,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RAINMAKER LABS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Tjokroaminoto (NR9NR4Z527)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -432,7 +432,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
+				PROVISIONING_PROFILE = "4415c85d-f4fe-4de7-bd56-0e5039ae1d2d";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -454,7 +454,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RAINMAKER LABS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Tjokroaminoto (NR9NR4Z527)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -469,7 +469,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
+				PROVISIONING_PROFILE = "4415c85d-f4fe-4de7-bd56-0e5039ae1d2d";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -481,12 +481,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RAINMAKER LABS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Tjokroaminoto (NR9NR4Z527)";
 				GCC_PREFIX_HEADER = memefication/memefication.pch;
 				INFOPLIST_FILE = memefication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
+				PRODUCT_NAME = "Meme Fication";
+				PROVISIONING_PROFILE = "452941f8-2d6b-44b6-860f-d23b6df5482b";
 			};
 			name = Debug;
 		};
@@ -496,12 +496,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: RAINMAKER LABS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Tjokroaminoto (NR9NR4Z527)";
 				GCC_PREFIX_HEADER = memefication/memefication.pch;
 				INFOPLIST_FILE = memefication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
+				PRODUCT_NAME = "Meme Fication";
+				PROVISIONING_PROFILE = "452941f8-2d6b-44b6-860f-d23b6df5482b";
 			};
 			name = Release;
 		};
@@ -509,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Tjokroaminoto (NR9NR4Z527)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,7 +521,7 @@
 				INFOPLIST_FILE = memeficationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
+				PROVISIONING_PROFILE = "4415c85d-f4fe-4de7-bd56-0e5039ae1d2d";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memefication.app/memefication";
 			};
 			name = Debug;
@@ -529,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Tjokroaminoto (NR9NR4Z527)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -536,7 +538,7 @@
 				INFOPLIST_FILE = memeficationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "407bbaa3-7698-4fb6-80fa-ec3a88a03403";
+				PROVISIONING_PROFILE = "4415c85d-f4fe-4de7-bd56-0e5039ae1d2d";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/memefication.app/memefication";
 			};
 			name = Release;
