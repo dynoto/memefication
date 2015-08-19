@@ -54,7 +54,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
     
     [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
     [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
-    [cell setActive];
+    [cell setStatus:true];
     
     // Configure the cell
     

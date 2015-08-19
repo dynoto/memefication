@@ -130,23 +130,25 @@
     
 }
 
-+ (BOOL)likeMeme:(NSString *)memeId {
++ (BOOL)likeMeme:(NSString *)memeId dislike:(BOOL)dislike {
     NSArray *result = [self getMemeLiked:memeId];
-    if ([[result firstObject] valueForKey:@"identifier"] == nil) {
-        AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-        
-        // MOC is like getting the database, in this case from AppDelegate
-        NSManagedObjectContext *moc = [delegate managedObjectContext];
-        
-        // Entity description is similar to selecting "table"
-        // NSManagedObject is for "saving" file
-        NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeFavourite" inManagedObjectContext:moc];
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *moc = [delegate managedObjectContext];
+    
+    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeFavourite" inManagedObjectContext:moc];
+    
+    if ([[result firstObject] valueForKey:@"identifier"] == nil && dislike != YES) {
         NSManagedObject *mo = [[NSManagedObject alloc] initWithEntity:ed insertIntoManagedObjectContext:moc];
         
         [mo setValue:memeId forKey:@"identifier"];
         [moc save:nil];
         return true;
-    } else {
+    } else if ([[result firstObject] valueForKey:@"identifier"] != nil && dislike == YES){
+        NSLog(@"Dislike this");
+        [moc deleteObject:[result firstObject]];
+        [moc save:nil];
+        return true;
+    }else {
         return false;
     }
 }
@@ -208,6 +210,19 @@
     }
     
     return [moc executeFetchRequest:req error:nil];
+}
+
++ (NSMutableArray*) getMemeLikedListID {
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *moc = [delegate managedObjectContext];
+    
+    //    GET ALL FAVOURITES FIRST
+    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeFavourite" inManagedObjectContext:moc];
+    NSFetchRequest *req = [[NSFetchRequest alloc] init];
+    [req setEntity:ed];
+    NSError *error;
+    NSArray *memeLikedList = [moc executeFetchRequest:req error:&error];
+    return [memeLikedList valueForKey:@"identifier"];
 }
 
 + (UIButton *) addRadius:(UIButton *)button color:(CGColorRef)color {

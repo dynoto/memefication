@@ -23,8 +23,9 @@
 + (NSArray*) getMemeLiked:(NSString*)memeId;
 + (NSArray*) getMemeLikedList:(NSString*)memeName;
 + (NSArray*) getMemeImage:(NSString*)memeId getIdOnly:(BOOL)getIdOnly;
++ (NSMutableArray*) getMemeLikedListID;
 
 + (UIButton*) addRadius:(UIButton *)button color:(CGColorRef)color;
 
-+ (BOOL) likeMeme:(NSString*)memeId;
++ (BOOL) likeMeme:(NSString*)memeId dislike:(BOOL)dislike;
 @end

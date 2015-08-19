@@ -8,7 +8,9 @@
 
 #import "MainCollectionViewController.h"
 
-@interface MainCollectionViewController ()
+@interface MainCollectionViewController () {
+    NSMutableArray *_likeList;
+}
 
 @end
 
@@ -18,12 +20,17 @@ static NSString * const reuseIdentifier = @"MemeCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _imageList = [MemeHelper getMemeImageList];
     [self resizeCollectionView];
     [self addSearchBar];
     
     // Register cell classes
     [self.collectionView registerClass:[MemeCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    _imageList = [MemeHelper getMemeImageList];
+    _likeList = [MemeHelper getMemeLikedListID];
+    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,6 +68,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
     
     [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
     [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
+    [cell setStatus:[_likeList containsObject:[imageObj valueForKey:@"identifier"]]];
 
     // Configure the cell
     

@@ -7,6 +7,11 @@
 //
 
 #import "MemeCollectionViewCell.h"
+@interface MemeCollectionViewCell()
+{
+            BOOL isLiked;
+}
+@end
 
 @implementation MemeCollectionViewCell
 
@@ -54,12 +59,20 @@
 }
 
 - (void)likeAction:(UIButton *)sender {
-    [MemeHelper likeMeme:_memeID];
-    [_memeLike setImage:[UIImage imageNamed:@"like-active-icon"] forState:UIControlStateNormal];
+    if (isLiked != YES) {
+        [MemeHelper likeMeme:_memeID dislike:NO];
+        [self setStatus:true];
+        isLiked = YES;
+    } else {
+        [MemeHelper likeMeme:_memeID dislike:YES];
+        [self setStatus:false];
+        isLiked = NO;
+    }
 }
 
-- (void)setActive {
-    [_memeLike setImage:[UIImage imageNamed:@"like-active-icon"] forState:UIControlStateNormal];
+- (void)setStatus:(BOOL)isActive {
+    isLiked = (isActive ? YES : NO);
+    [_memeLike setImage:[UIImage imageNamed:(isActive ? @"like-active-icon" : @"like-icon")] forState:UIControlStateNormal];
 }
 
 @end

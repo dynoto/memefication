@@ -75,5 +75,35 @@
                   "name": "Awesome Awkward Penguin",
                   "image_name": "awesome-awkward-penguin"
                   },
+                  {
+                  "identifier": 16,
+                  "name": "Good Guy Greg",
+                  "image_name": "good-guy-greg"
+                  },
+                  {
+                  "identifier": 17,
+                  "name": "Scumbag Steve",
+                  "image_name": "scumbag-steve"
+                  },
+                  {
+                  "identifier": 18,
+                  "name": "Advice Mallard",
+                  "image_name": "good-advice-mallard"
+                  },
+                  {
+                  "identifier": 19,
+                  "name": "Bad Advice Mallard",
+                  "image_name": "bad-advice-mallard"
+                  },
+                  {
+                  "identifier": 20,
+                  "name": "Fact Frog",
+                  "image_name": "small-fact-frog"
+                  },
+                  {
+                  "identifier": 21,
+                  "name": "10 High Guy",
+                  "image_name": "10-high-guy"
+                  },
                   ]
 }

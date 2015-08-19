@@ -19,7 +19,7 @@
 
 - (void)setLabelText:(NSString*)labelName;
 - (void)setAttributes:(NSString*)imageId imageName:(NSString*)imageName;
-- (void)setActive;
+- (void)setStatus:(BOOL)isActive;
 - (void)likeAction:(UIButton *)sender;
 
 @end
