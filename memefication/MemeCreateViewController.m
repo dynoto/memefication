@@ -63,9 +63,14 @@
     
     _memeTopLabel.strokeSize = 2.0f;
     _memeTopLabel.strokeColor = [UIColor blackColor];
+    _memeTopLabel.userInteractionEnabled = YES;
+    [_memeTopLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapLabel:)]];
+    
     
     _memeBottomLabel.strokeSize = _memeTopLabel.strokeSize;
     _memeBottomLabel.strokeColor = _memeTopLabel.strokeColor;
+    _memeBottomLabel.userInteractionEnabled = YES;
+    [_memeBottomLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapLabel:)]];
     
     
     [_memeTopText addTarget:self action:@selector(textChanged:) forControlEvents:UIControlEventEditingChanged];
@@ -120,6 +125,22 @@
     GADRequest *request = [GADRequest request];
     request.testDevices = @[ @"7434b48a0e959dfb308923c72c435c42", kGADSimulatorID ];
     [self.bannerView loadRequest:request];
+}
+
+- (void)tapLabel:(id)sender {
+    UITapGestureRecognizer *tapRecognizer = (UITapGestureRecognizer*)sender;
+    switch ([tapRecognizer.view tag]) {
+        case 100:
+            _memeTopLabel.text = _memeTopText.text;
+            [_memeTopText becomeFirstResponder];
+            break;
+        case 101:
+            _memeBottomLabel.text = _memeBottomText.text;
+            [_memeBottomText becomeFirstResponder];
+            break;
+        default:
+            break;
+    }
 }
 
 @end
