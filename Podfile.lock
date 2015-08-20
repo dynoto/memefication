@@ -1,20 +1,15 @@
 PODS:
   - Google-Mobile-Ads-SDK (7.4.1)
-  - Groot (1.0.1):
-    - Groot/Swift (= 1.0.1)
-  - Groot/Swift (1.0.1)
   - KVNProgress (2.2.1)
   - THLabel (1.4.6)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK (~> 7.0)
-  - Groot
   - KVNProgress
   - THLabel (~> 1.4.6)
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: dce4c2728daa0bcbd88b6e3dc111b718a07b1eb6
-  Groot: 8bcac9a812ccac7545bb6f515639acfbb5e7c1ca
   KVNProgress: 7001d2d16a2755cee5599e8e485befe056f2197b
   THLabel: 27890d10123514ffe74b6e023b57b2ece55304af
 

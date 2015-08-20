@@ -44,7 +44,7 @@
         <scene sceneID="mi8-V2-2JB">
             <objects>
                 <navigationController navigationBarHidden="YES" id="gaD-6G-F0S" userLabel="Favourite Navigation" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favourites" image="love-icon" id="Gxx-xd-oQ4"/>
+                    <tabBarItem key="tabBarItem" title="Favourites" image="like-icon" id="Gxx-xd-oQ4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ND1-gG-MZX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -492,7 +492,6 @@
                     <connections>
                         <segue destination="8vr-Yi-YGf" kind="relationship" relationship="viewControllers" id="dY0-dV-6MV"/>
                         <segue destination="gaD-6G-F0S" kind="relationship" relationship="viewControllers" id="PUp-xD-cFo"/>
-                        <segue destination="3rm-SV-ftB" kind="relationship" relationship="viewControllers" id="rxh-6r-1j0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -501,7 +500,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="love-icon" width="30" height="30"/>
+        <image name="like-icon" width="30" height="30"/>
         <image name="not-sure-if" width="1024" height="1024"/>
         <image name="plus-icon" width="30" height="30"/>
         <image name="settings-icon" width="30" height="30"/>

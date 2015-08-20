@@ -12,18 +12,6 @@
 #define COCOAPODS_VERSION_MINOR_Google_Mobile_Ads_SDK 4
 #define COCOAPODS_VERSION_PATCH_Google_Mobile_Ads_SDK 1
 
-// Groot
-#define COCOAPODS_POD_AVAILABLE_Groot
-#define COCOAPODS_VERSION_MAJOR_Groot 1
-#define COCOAPODS_VERSION_MINOR_Groot 0
-#define COCOAPODS_VERSION_PATCH_Groot 1
-
-// Groot/Swift
-#define COCOAPODS_POD_AVAILABLE_Groot_Swift
-#define COCOAPODS_VERSION_MAJOR_Groot_Swift 1
-#define COCOAPODS_VERSION_MINOR_Groot_Swift 0
-#define COCOAPODS_VERSION_PATCH_Groot_Swift 1
-
 // KVNProgress
 #define COCOAPODS_POD_AVAILABLE_KVNProgress
 #define COCOAPODS_VERSION_MAJOR_KVNProgress 2
