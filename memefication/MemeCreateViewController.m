@@ -53,9 +53,22 @@
 }
 
 - (void)textChanged:(UITextField *)textField {
-    THLabel *label = (textField.tag == 100) ? _memeTopLabel : _memeBottomLabel;
+    THLabel *label;
+    NSString *blankText;
     
-    label.text = [textField.text uppercaseString];
+    switch (textField.tag) {
+        case 100:
+            label = _memeTopLabel;
+            blankText = @"Input Top Text";
+            break;
+            
+        default:
+            label = _memeBottomLabel;
+            blankText = @"Input Bottom Text";
+            break;
+    }
+    
+    label.text = ([textField.text  isEqual: @""] ? blankText: [textField.text uppercaseString]);
 }
 
 - (void)prepareUI {

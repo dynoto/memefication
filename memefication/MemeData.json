@@ -120,5 +120,10 @@
                   "name": "Weird Stuff",
                   "image_name": "weird-stuff-potoo"
                   },
+                  {
+                  "identifier": 25,
+                  "name": "Pun Dog Husky",
+                  "image_name": "dog-pun-husky"
+                  },
                   ]
 }
