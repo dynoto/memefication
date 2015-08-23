@@ -16,7 +16,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *memeImage;
 @property (strong, nonatomic) IBOutlet UIButton *memeLike;
 @property (strong, nonatomic) NSString *memeID;
+@property BOOL isCamera;
 
+- (void)setCamera;
 - (void)setLabelText:(NSString*)labelName;
 - (void)setAttributes:(NSString*)imageId imageName:(NSString*)imageName;
 - (void)setStatus:(BOOL)isActive;

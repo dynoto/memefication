@@ -30,7 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)setImageName:(UIImage *)image {
+- (void)setImage:(UIImage *)image {
     _selectedImage = image;
 }
 

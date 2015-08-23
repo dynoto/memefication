@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 #import "MemeCollectionViewCell.h"
 #import "MemeCreateViewController.h"
 #import "MemeHelper.h"
 
-@interface MainCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate>
+@interface MainCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionReusableView *collectionViewHeader;

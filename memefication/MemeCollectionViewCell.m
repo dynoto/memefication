@@ -36,6 +36,8 @@
     _memeLike = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width-45, 15, 25, 25)];
     [_memeLike setImage:[UIImage imageNamed:@"like-icon"] forState:UIControlStateNormal];
     [_memeLike addTarget:self action:@selector(likeAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    _isCamera = NO;
 
     [self addSubview:_memeImage];
     [self addSubview:_memeLabel];
@@ -78,7 +80,11 @@
 }
 
 - (void)setCamera {
-    
+    _isCamera = YES;
+    _memeImage.image = [UIImage imageNamed:@"camera-image"];
+    _memeLabel.text = @"";
+    _memeLike.hidden = true;
+    _memeImage.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
 }
 
 @end

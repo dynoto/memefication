@@ -63,12 +63,15 @@ static NSString * const reuseIdentifier = @"MemeCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     MemeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    NSArray *imageObj = [_imageList objectAtIndex:indexPath.row];
     
-    
-    [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
-    [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
-    [cell setStatus:[_likeList containsObject:[imageObj valueForKey:@"identifier"]]];
+    if (indexPath.row == 0) {
+        [cell setCamera];
+    } else {
+        NSArray *imageObj = [_imageList objectAtIndex:indexPath.row];
+        [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
+        [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
+        [cell setStatus:[_likeList containsObject:[imageObj valueForKey:@"identifier"]]];
+    }
 
     // Configure the cell
     
@@ -153,14 +156,32 @@ static NSString * const reuseIdentifier = @"MemeCell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     MemeCollectionViewCell *vc = [collectionView cellForItemAtIndexPath:indexPath];
-    _selectedImage = vc.memeImage.image;
     
+    if (vc.isCamera) {
+        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+            picker.delegate = self;
+            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            picker.allowsEditing = YES;
+            picker.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
+
+            [self presentViewController:picker animated:YES completion:nil];
+        }
+    } else {
+        _selectedImage = vc.memeImage.image;
+        [self performSegueWithIdentifier:@"segueMemeListToCreate" sender:self];
+    }
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    _selectedImage = info[UIImagePickerControllerEditedImage];
     [self performSegueWithIdentifier:@"segueMemeListToCreate" sender:self];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.destinationViewController respondsToSelector:@selector(setImageName:)]) {
-        [segue.destinationViewController performSelector:@selector(setImageName:) withObject:_selectedImage];
+    if ([segue.destinationViewController respondsToSelector:@selector(setImage:)]) {
+        [segue.destinationViewController performSelector:@selector(setImage:) withObject:_selectedImage];
     }
 }
 

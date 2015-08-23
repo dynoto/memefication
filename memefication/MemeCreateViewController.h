@@ -28,7 +28,7 @@
 
 
 - (IBAction)backAction:(id)sender;
-- (void)setImageName:(UIImage *)image;
+- (void)setImage:(UIImage *)image;
 
 
 @end
