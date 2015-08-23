@@ -252,15 +252,27 @@
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@MEMEFIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3T-eL-oQi">
+                                        <rect key="frame" x="208" y="268" width="80" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="LOr-Mn-iVR"/>
+                                            <constraint firstAttribute="width" constant="80" id="naI-B5-cgU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Qy4-zJ-g09" firstAttribute="top" secondItem="w1m-Ml-P8s" secondAttribute="top" id="0Gx-Hm-Re8"/>
                                     <constraint firstItem="Qy4-zJ-g09" firstAttribute="leading" secondItem="w1m-Ml-P8s" secondAttribute="leading" id="15H-K9-X8Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="W3T-eL-oQi" secondAttribute="bottom" id="6uc-Zi-24C"/>
                                     <constraint firstAttribute="trailing" secondItem="yWK-PF-Sw3" secondAttribute="trailing" constant="14" id="AAM-SI-3D7"/>
                                     <constraint firstAttribute="bottom" secondItem="gRE-Tc-9WS" secondAttribute="bottom" constant="8" id="HCS-fw-8qD"/>
                                     <constraint firstItem="yWK-PF-Sw3" firstAttribute="top" secondItem="w1m-Ml-P8s" secondAttribute="top" id="Lbq-WY-8Ww"/>
                                     <constraint firstItem="yWK-PF-Sw3" firstAttribute="leading" secondItem="w1m-Ml-P8s" secondAttribute="leading" constant="14" id="Ogw-Ns-kz9"/>
+                                    <constraint firstAttribute="trailing" secondItem="W3T-eL-oQi" secondAttribute="trailing" id="Q4n-KF-ffc"/>
                                     <constraint firstAttribute="trailing" secondItem="Qy4-zJ-g09" secondAttribute="trailing" id="X0j-2P-XDy"/>
                                     <constraint firstItem="gRE-Tc-9WS" firstAttribute="leading" secondItem="w1m-Ml-P8s" secondAttribute="leading" constant="14" id="dqa-ea-Gue"/>
                                     <constraint firstAttribute="trailing" secondItem="gRE-Tc-9WS" secondAttribute="trailing" constant="14" id="iub-Wx-0rV"/>
@@ -362,6 +374,7 @@
                         <outlet property="memeImageView" destination="w1m-Ml-P8s" id="kAw-l0-yjM"/>
                         <outlet property="memeTopLabel" destination="yWK-PF-Sw3" id="Ovh-Kx-Chj"/>
                         <outlet property="memeTopText" destination="VJp-mA-chS" id="A8c-fJ-mwX"/>
+                        <outlet property="memeWatermark" destination="W3T-eL-oQi" id="Shq-Al-CRl"/>
                         <segue destination="Gsm-Ym-f2w" kind="push" identifier="segueMemeCreateToShare" id="ZRB-4J-oZv"/>
                     </connections>
                 </viewController>
@@ -498,6 +511,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WkD-pH-AG5">
+            <objects>
+                <viewController id="LY8-3O-Mrh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y5p-wR-dCa"/>
+                        <viewControllerLayoutGuide type="bottom" id="hpu-Za-JhP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ri1-NN-vE2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2Z-SC-Ky6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

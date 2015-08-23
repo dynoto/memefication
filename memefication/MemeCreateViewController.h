@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *memeImage;
 @property (weak, nonatomic) IBOutlet THLabel *memeTopLabel;
 @property (weak, nonatomic) IBOutlet THLabel *memeBottomLabel;
+@property (weak, nonatomic) IBOutlet UILabel *memeWatermark;
 @property (weak, nonatomic) IBOutlet UITextField *memeTopText;
 @property (weak, nonatomic) IBOutlet UITextField *memeBottomText;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;

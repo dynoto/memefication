@@ -109,6 +109,10 @@
 
     CGContextTranslateCTM(context, 0, _memeBottomLabel.frame.origin.y);
     [_memeBottomLabel.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    CGContextTranslateCTM(context, _memeWatermark.frame.origin.x - _memeTopLabel.frame.origin.x , _memeWatermark.frame.origin.y - _memeBottomLabel.frame.origin.y);
+    [_memeWatermark.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
     _renderedImage = UIGraphicsGetImageFromCurrentImageContext();
     
 //    UIImageWriteToSavedPhotosAlbum(_renderedImage, nil, nil, nil);
