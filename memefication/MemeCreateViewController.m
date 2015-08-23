@@ -59,12 +59,12 @@
     switch (textField.tag) {
         case 100:
             label = _memeTopLabel;
-            blankText = @"Input Top Text";
+            blankText = @"Input Top Label";
             break;
             
         default:
             label = _memeBottomLabel;
-            blankText = @"Input Bottom Text";
+            blankText = @"Input Bottom Label";
             break;
     }
     
@@ -74,7 +74,14 @@
 - (void)prepareUI {
     UIColor *blueColor = [UIColor colorWithRed:19/255.0 green:144/255.0 blue:255/255.0 alpha:1.0];
     
-    _memeTopLabel.strokeSize = 2.0f;
+    if (IS_IPHONE_5) {
+        [_memeTopLabel setFont:[UIFont fontWithName:@"Impact" size:24.0]];
+        [_memeBottomLabel setFont:_memeTopLabel.font];
+        _memeTopLabel.strokeSize = 1.2f;
+    } else {
+        _memeTopLabel.strokeSize = 2.0f;
+    }
+    
     _memeTopLabel.strokeColor = [UIColor blackColor];
     _memeTopLabel.userInteractionEnabled = YES;
     [_memeTopLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapLabel:)]];

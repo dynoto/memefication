@@ -19,10 +19,12 @@
     CGRect screenSize = [UIScreen mainScreen].applicationFrame;
     self = [super initWithFrame:CGRectMake(0, 0, screenSize.size.width*0.5, screenSize.size.width*0.5)];
     
+    int fontSize = IS_IPHONE_5 ? 14.0 : 18.0;
+    
     _memeLabel = [[THLabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     _memeLabel.numberOfLines = 2;
     _memeLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    _memeLabel.font = [UIFont fontWithName:@"Impact" size:18.0];
+    _memeLabel.font = [UIFont fontWithName:@"Impact" size:fontSize];
     _memeLabel.textColor = [UIColor whiteColor];
     _memeLabel.strokeSize = 2.0f;
     _memeLabel.strokeColor = [UIColor blackColor];
@@ -73,6 +75,10 @@
 - (void)setStatus:(BOOL)isActive {
     isLiked = (isActive ? YES : NO);
     [_memeLike setImage:[UIImage imageNamed:(isActive ? @"like-active-icon" : @"like-icon")] forState:UIControlStateNormal];
+}
+
+- (void)setCamera {
+    
 }
 
 @end
