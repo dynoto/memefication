@@ -99,6 +99,7 @@
     [_memeBottomText addTarget:self action:@selector(textChanged:) forControlEvents:UIControlEventEditingChanged];
     _memeBottomText.adjustsFontSizeToFitWidth = _memeTopText.adjustsFontSizeToFitWidth;
     
+    _memeImageView.contentMode = UIViewContentModeScaleAspectFit;
     _memeImageView.layer.borderWidth = 0.8f;
     _memeImageView.layer.borderColor = [[UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1.0] CGColor];
     
