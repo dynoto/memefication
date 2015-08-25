@@ -158,15 +158,10 @@ static NSString * const reuseIdentifier = @"MemeCell";
     MemeCollectionViewCell *vc = [collectionView cellForItemAtIndexPath:indexPath];
     
     if (vc.isCamera) {
-        if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-            picker.delegate = self;
-            picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-            picker.allowsEditing = YES;
-            picker.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
-
-            [self presentViewController:picker animated:YES completion:nil];
-        }
+        UIActionSheet *popup = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Photo from Camera", @"Photo from Library",nil];
+        
+        popup.tag = 1;
+        [popup showInView:[UIApplication sharedApplication].keyWindow];
     } else {
         _selectedImage = vc.memeImage.image;
         [self performSegueWithIdentifier:@"segueMemeListToCreate" sender:self];
@@ -182,6 +177,28 @@ static NSString * const reuseIdentifier = @"MemeCell";
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.destinationViewController respondsToSelector:@selector(setImage:)]) {
         [segue.destinationViewController performSelector:@selector(setImage:) withObject:_selectedImage];
+    }
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeImage, nil];
+        
+        switch (buttonIndex) {
+            case 0:
+                picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+                break;
+            case 1:
+                picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                break;
+            default:
+                break;
+        }
+        
+        [self presentViewController:picker animated:YES completion:nil];
     }
 }
 
