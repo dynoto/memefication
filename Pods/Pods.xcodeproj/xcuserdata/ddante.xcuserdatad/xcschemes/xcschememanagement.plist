@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-KVNProgress.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-THLabel.xcscheme</key>
+		<key>KVNProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,20 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>THLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>279E3BA6F898D47B6E0A1059</key>
+		<key>0240E62ADDC9718DEBC992617DAD6866</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D9373EC2E1536FB6296484D</key>
+		<key>744CF7F79CB31D069D81CB51171E254A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7597907E80B2803C28556457</key>
+		<key>9666688CB41B38A9914616144C9C7A3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A6910B4CDE7F41869E822E35BC220EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -149,7 +149,7 @@
     self.bannerView.rootViewController = self;
     GADRequest *request = [GADRequest request];
     request.testDevices = @[ @"7434b48a0e959dfb308923c72c435c42", kGADSimulatorID ];
-    [self.bannerView loadRequest:request];
+//    [self.bannerView loadRequest:request];
 }
 
 - (void)tapLabel:(id)sender {

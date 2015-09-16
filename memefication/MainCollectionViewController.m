@@ -68,9 +68,11 @@ static NSString * const reuseIdentifier = @"MemeCell";
         [cell setCamera];
     } else {
         NSArray *imageObj = [_imageList objectAtIndex:indexPath.row];
-        [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"image_name"]];
+        [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"thumbnail"]];
         [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
-        [cell setStatus:[_likeList containsObject:[imageObj valueForKey:@"identifier"]]];
+        [cell setStatus:[_likeList containsObject:[imageObj valueForKey:@"id"]]];
+        cell.layer.shouldRasterize = YES;
+        cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
     }
 
     // Configure the cell

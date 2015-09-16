@@ -17,6 +17,7 @@
 + (void) clearMemeImageData;
 + (void) saveMemeImage:(NSString*)memeId memeImageName:(NSString *)memeImageName;
 + (void) updateMemeJSON;
+- (id) parseResponse:(NSData*)data;
 
 + (NSArray*) getMemeImageList;
 + (NSArray*) getMemeImageList:(NSString*) memeName;

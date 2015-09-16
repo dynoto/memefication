@@ -8,12 +8,36 @@
 
 #import "MemeHelper.h"
 #import "AppDelegate.h"
+#import "Api.h"
 
 @implementation MemeHelper
 
 - (void)getScreenSize {
     CGRect screenSize = [UIScreen mainScreen].applicationFrame;
 }
+
+//- (id) parseResponse:(NSData *) data {
+//    
+//    NSString *myData = [[NSString alloc] initWithData:data
+//                                             encoding:NSUTF8StringEncoding];
+//    NSLog(@"JSON data = %@", myData);
+//    NSError *error = nil;
+//    
+//    //parsing the JSON response
+//    id jsonObject = [NSJSONSerialization
+//                     JSONObjectWithData:data
+//                     options:NSJSONReadingAllowFragments
+//                     error:&error];
+//    if (jsonObject != nil && error == nil){
+//        NSLog(@"Successfully deserialized...");
+//        
+//        return jsonObject;
+//    } else {
+//        return nil;
+//    }
+//    
+//}
+
 
 + (NSArray *)getMemeImage:(NSString*)memeId getIdOnly:(BOOL)getIdOnly {
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
@@ -44,32 +68,92 @@
 }
 
 + (NSArray *)getMemeImageList:(NSString*)memeName {
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSURL *url = [NSURL URLWithString:MEME_LIST];
     
-    // MOC is like getting the database, in this case from AppDelegate
-    NSManagedObjectContext *moc = [delegate managedObjectContext];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    //sets the receiver’s timeout interval, in seconds
+    [urlRequest setTimeoutInterval:30.0f];
+    //sets the receiver’s HTTP request method
+    [urlRequest setHTTPMethod:@"GET"];
+    //sets the request body of the receiver to the specified data.
     
-    // Entity description is similar to selecting "table"
-    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
+    //allocate a new operation queue
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
-    // Create a fetch request, set the entity is like pointing to the database table
-    NSFetchRequest *req = [[NSFetchRequest alloc] init];
-    [req setEntity:ed];
+    NSURLResponse *response;
+    NSError *error;
     
-    // GET ID ONLY USED IN SCENARIOS WHERE YOU WANT TO CHECK IF THE DATA EXISTS
-    // if (getIdOnly) {
-    //     [req setFetchLimit:1];
-    //     [req setIncludesPropertyValues:NO];
-    // }
+    NSData *responseData = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
+
+    NSString *stringData = [[NSString alloc] initWithData:responseData
+                                             encoding:NSUTF8StringEncoding];
+//    NSLog(@"JSON data = %@", stringData);
     
-    // similar to SQL query "where"
-    if (memeName != nil) {
-        NSPredicate *pred = [NSPredicate predicateWithFormat:@"(name CONTAINS[cd] %@)",memeName];
-        [req setPredicate:pred];
+    //parsing the JSON response
+    id jsonObject = [NSJSONSerialization
+                     JSONObjectWithData:responseData
+                     options:NSJSONReadingAllowFragments
+                     error:&error];
+    if (jsonObject != nil && error == nil){
+        NSLog(@"Successfully deserialized...");
+        
+        return [jsonObject objectForKey:@"results"];
+    } else {
+        return nil;
     }
     
-    return [moc executeFetchRequest:req error:nil];
+//    
+//    
+//    [NSURLConnection
+//     sendAsynchronousRequest:urlRequest
+//     queue:queue
+//     completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+//         if ([data length] > 0 && error == nil) {
+//             dispatch_async(dispatch_get_main_queue(), ^{
+//                 NSDictionary *response = [self parseResponse:data];
+//                 
+//             });
+//         }
+//         else if ([data length] == 0 && error == nil){
+//             NSLog(@"Empty Response, not sure why?");
+//         }
+//         else if (error != nil){
+//             NSLog(@"Not again, what is the error = %@", error);
+//         }
+//     }];
+    
+    
+    
+    
+//    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+//    
+//    // MOC is like getting the database, in this case from AppDelegate
+//    NSManagedObjectContext *moc = [delegate managedObjectContext];
+//    
+//    // Entity description is similar to selecting "table"
+//    NSEntityDescription *ed = [NSEntityDescription entityForName:@"MemeImage" inManagedObjectContext:moc];
+//    
+//    // Create a fetch request, set the entity is like pointing to the database table
+//    NSFetchRequest *req = [[NSFetchRequest alloc] init];
+//    [req setEntity:ed];
+//    
+//    // GET ID ONLY USED IN SCENARIOS WHERE YOU WANT TO CHECK IF THE DATA EXISTS
+//    // if (getIdOnly) {
+//    //     [req setFetchLimit:1];
+//    //     [req setIncludesPropertyValues:NO];
+//    // }
+//    
+//    // similar to SQL query "where"
+//    if (memeName != nil) {
+//        NSPredicate *pred = [NSPredicate predicateWithFormat:@"(name CONTAINS[cd] %@)",memeName];
+//        [req setPredicate:pred];
+//    }
+//    
+//    return [moc executeFetchRequest:req error:nil];
 }
+
+
+
 
 + (NSArray *)getMemeImageList {
     return [self getMemeImageList:nil];
@@ -245,7 +329,6 @@
         return nil;
     }
 }
-
 
 
 @end

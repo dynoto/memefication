@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [MemeHelper updateMemeJSON];
+//    [MemeHelper clearMemeImageData];
+//    [MemeHelper updateMemeJSON];
     return YES;
 }
 
