@@ -67,8 +67,14 @@
     return [moc executeFetchRequest:req error:nil];
 }
 
-+ (NSArray *)getMemeImageList:(NSString*)memeName {
-    NSURL *url = [NSURL URLWithString:MEME_LIST];
++ (NSDictionary *)getMemeImageList:(NSString*)memeName pageUrl:(NSString*)pageUrl {
+    NSURL *url;
+    
+    if (pageUrl) {
+        url = [NSURL URLWithString:pageUrl];
+    } else {
+        url = [NSURL URLWithString:MEME_LIST];
+    }
     
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     //sets the receiver’s timeout interval, in seconds
@@ -95,9 +101,7 @@
                      options:NSJSONReadingAllowFragments
                      error:&error];
     if (jsonObject != nil && error == nil){
-        NSLog(@"Successfully deserialized...");
-        
-        return [jsonObject objectForKey:@"results"];
+        return jsonObject;
     } else {
         return nil;
     }
@@ -155,8 +159,8 @@
 
 
 
-+ (NSArray *)getMemeImageList {
-    return [self getMemeImageList:nil];
++ (NSDictionary *)getMemeImageList {
+    return [self getMemeImageList:nil pageUrl:nil];
 }
 
 + (BOOL)isMemeExist:(NSString*)memeId {

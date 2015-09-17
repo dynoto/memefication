@@ -28,7 +28,9 @@ static NSString * const reuseIdentifier = @"MemeCell";
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    _imageList = [MemeHelper getMemeImageList];
+    NSDictionary *response = [MemeHelper getMemeImageList];
+    _pageUrl = [response objectForKey:@"next"];
+    _imageList = [NSMutableArray arrayWithArray:[response objectForKey:@"results"]];
     _likeList = [MemeHelper getMemeLikedListID];
     [self.collectionView reloadData];
 }
@@ -58,7 +60,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete method implementation -- Return the number of items in the section
-    return [_imageList count];
+    return [_imageList count]+1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,7 +69,7 @@ static NSString * const reuseIdentifier = @"MemeCell";
     if (indexPath.row == 0) {
         [cell setCamera];
     } else {
-        NSArray *imageObj = [_imageList objectAtIndex:indexPath.row];
+        NSArray *imageObj = [_imageList objectAtIndex:(indexPath.row - 1)];
         [cell setAttributes:[imageObj valueForKey:@"identifier"] imageName:[imageObj valueForKey:@"thumbnail"]];
         [cell setLabelText:[[imageObj valueForKey:@"name"] uppercaseString]];
         [cell setStatus:[_likeList containsObject:[imageObj valueForKey:@"id"]]];
@@ -119,13 +121,15 @@ static NSString * const reuseIdentifier = @"MemeCell";
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-    if ([searchText length]) {
-        _imageList = [MemeHelper getMemeImageList:searchText];
-    } else {
-        _imageList = [MemeHelper getMemeImageList];
-    }
-    [self.collectionView reloadData];
-    [searchBar becomeFirstResponder];
+//    
+//    
+//    if ([searchText length]) {
+//        _imageList = [MemeHelper getMemeImageList:searchText pageUrl:nil];
+//    } else {
+//        _imageList = [MemeHelper getMemeImageList];
+//    }
+//    [self.collectionView reloadData];
+//    [searchBar becomeFirstResponder];
 }
 
 #pragma mark <UICollectionViewDelegate>
@@ -204,6 +208,16 @@ static NSString * const reuseIdentifier = @"MemeCell";
     }
 }
 
-
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
+    if ((scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height) && ([_pageUrl isKindOfClass:[NSNull class]] == 0))
+    {
+        NSDictionary *response = [MemeHelper getMemeImageList:nil pageUrl:_pageUrl];
+        _pageUrl = [response objectForKey:@"next"];
+        [_imageList addObjectsFromArray:[response objectForKey:@"results"]];
+        [self.collectionView reloadData];
+        
+    }
+}
 
 @end

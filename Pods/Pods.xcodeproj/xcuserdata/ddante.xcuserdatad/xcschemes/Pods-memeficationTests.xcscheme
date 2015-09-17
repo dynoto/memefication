@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38809D0DEE11A8D558DD8A20"
-               BuildableName = "libTHLabel.a"
-               BlueprintName = "THLabel"
+               BlueprintIdentifier = "D790BBD46BD4E38C58184805"
+               BuildableName = "libPods-memeficationTests.a"
+               BlueprintName = "Pods-memeficationTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

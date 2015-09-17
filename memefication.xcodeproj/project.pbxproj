@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411AB8ED4D04F8B39C8548FD /* libPods-memefication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D40671FF3F79CD38FC6FCD /* libPods-memefication.a */; };
+		7AAB8EF1DDB279B02C8285CE /* libPods-memeficationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B25E845FE140FC04CDE449 /* libPods-memeficationTests.a */; };
 		9CAE71CAFBF16E07DC107627 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81555CEA181E206F2374C2F4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DC0A6A631B7B97140048F108 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0A6A621B7B97140048F108 /* CoreData.framework */; };
 		DC0A6A9B1B7B97E40048F108 /* memefication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC0A6A991B7B97E40048F108 /* memefication.xcdatamodeld */; };
@@ -41,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		114A2716469688F8E396B9C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		27B25E845FE140FC04CDE449 /* libPods-memeficationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-memeficationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE30F011E0A415FC427E6E3 /* Pods-memeficationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeficationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-memeficationTests/Pods-memeficationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48D40671FF3F79CD38FC6FCD /* libPods-memefication.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-memefication.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81555CEA181E206F2374C2F4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		917F4162269740634B0BA2CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A978AEF6700C32D5CB9A24B6 /* Pods-memeficationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memeficationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-memeficationTests/Pods-memeficationTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC0A6A621B7B97140048F108 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DC0A6A9A1B7B97E40048F108 /* memefication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = memefication.xcdatamodel; sourceTree = "<group>"; };
 		DC2873FB1B7D106200EEEF87 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -71,11 +75,14 @@
 		DC79E0E61B7A7A7100E586AE /* MemeCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeCreateViewController.h; sourceTree = "<group>"; };
 		DC79E0E71B7A7A7100E586AE /* MemeCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeCreateViewController.m; sourceTree = "<group>"; };
 		DCB7493A1B7CC16700D9FA5A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCC07C0A1BA9B0ED0018265F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		DCC189AE1BA9956F0087E483 /* api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = api.h; sourceTree = "<group>"; };
 		DCE8C6D21B7CC4E1001959D2 /* Impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Impact.ttf; sourceTree = "<group>"; };
 		DCE8C6D51B7CCE00001959D2 /* MemeShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemeShareViewController.h; sourceTree = "<group>"; };
 		DCE8C6D61B7CCE00001959D2 /* MemeShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemeShareViewController.m; sourceTree = "<group>"; };
 		DCE8C6D81B7D0124001959D2 /* MemeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MemeData.json; sourceTree = "<group>"; };
+		E1167EB68B1641C06AE721B9 /* Pods-memefication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memefication.release.xcconfig"; path = "Pods/Target Support Files/Pods-memefication/Pods-memefication.release.xcconfig"; sourceTree = "<group>"; };
+		F1DE65D834ACE7633E9F2589 /* Pods-memefication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-memefication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-memefication/Pods-memefication.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +94,7 @@
 				DC5164AE1B7C68ED002C2C7D /* QuartzCore.framework in Frameworks */,
 				DC0A6A631B7B97140048F108 /* CoreData.framework in Frameworks */,
 				9CAE71CAFBF16E07DC107627 /* Pods.framework in Frameworks */,
+				411AB8ED4D04F8B39C8548FD /* libPods-memefication.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,17 +102,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAB8EF1DDB279B02C8285CE /* libPods-memeficationTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9612621C06C4CB00B64D7F6E /* Pods */ = {
+		94D6C0BEAA7499F297D3A5AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				917F4162269740634B0BA2CC /* Pods.debug.xcconfig */,
-				114A2716469688F8E396B9C0 /* Pods.release.xcconfig */,
+				F1DE65D834ACE7633E9F2589 /* Pods-memefication.debug.xcconfig */,
+				E1167EB68B1641C06AE721B9 /* Pods-memefication.release.xcconfig */,
+				3BE30F011E0A415FC427E6E3 /* Pods-memeficationTests.debug.xcconfig */,
+				A978AEF6700C32D5CB9A24B6 /* Pods-memeficationTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -112,8 +123,11 @@
 		A93D326DE5650CBDE962F660 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCC07C0A1BA9B0ED0018265F /* SDWebImage.framework */,
 				DC2873FB1B7D106200EEEF87 /* Social.framework */,
 				81555CEA181E206F2374C2F4 /* Pods.framework */,
+				48D40671FF3F79CD38FC6FCD /* libPods-memefication.a */,
+				27B25E845FE140FC04CDE449 /* libPods-memeficationTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,8 +140,8 @@
 				DC2C56901B79FD670030B2F6 /* memefication */,
 				DC2C56AD1B79FD670030B2F6 /* memeficationTests */,
 				DC2C568F1B79FD670030B2F6 /* Products */,
-				9612621C06C4CB00B64D7F6E /* Pods */,
 				A93D326DE5650CBDE962F660 /* Frameworks */,
+				94D6C0BEAA7499F297D3A5AF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,12 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2C56B41B79FD670030B2F6 /* Build configuration list for PBXNativeTarget "memefication" */;
 			buildPhases = (
-				E0838D04D690D0629E541CBF /* Check Pods Manifest.lock */,
+				65A5E92A916E8357AC51CEA5 /* Check Pods Manifest.lock */,
 				DC2C568A1B79FD670030B2F6 /* Sources */,
 				DC2C568B1B79FD670030B2F6 /* Frameworks */,
 				DC2C568C1B79FD670030B2F6 /* Resources */,
-				7D35C07880447735DCD9AF55 /* Copy Pods Resources */,
-				8E1EA04770BAB937BD33BFA0 /* Embed Pods Frameworks */,
+				8A4F52BECEC7CC0727CF9A21 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC2C56B71B79FD670030B2F6 /* Build configuration list for PBXNativeTarget "memeficationTests" */;
 			buildPhases = (
+				A839C03B1C74883AA4DDBA73 /* Check Pods Manifest.lock */,
 				DC2C56A61B79FD670030B2F6 /* Sources */,
 				DC2C56A71B79FD670030B2F6 /* Frameworks */,
 				DC2C56A81B79FD670030B2F6 /* Resources */,
+				07FCB0C4FF90D9CC22859C0F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,7 +317,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7D35C07880447735DCD9AF55 /* Copy Pods Resources */ = {
+		07FCB0C4FF90D9CC22859C0F /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,25 +329,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-memeficationTests/Pods-memeficationTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E1EA04770BAB937BD33BFA0 /* Embed Pods Frameworks */ = {
+		65A5E92A916E8357AC51CEA5 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E0838D04D690D0629E541CBF /* Check Pods Manifest.lock */ = {
+		8A4F52BECEC7CC0727CF9A21 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-memefication/Pods-memefication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A839C03B1C74883AA4DDBA73 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,11 +510,15 @@
 		};
 		DC2C56B51B79FD670030B2F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 917F4162269740634B0BA2CC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F1DE65D834ACE7633E9F2589 /* Pods-memefication.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: David Tjokroaminoto (KNLTNXVHSU)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				GCC_PREFIX_HEADER = memefication/memefication.pch;
 				INFOPLIST_FILE = memefication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -495,11 +529,15 @@
 		};
 		DC2C56B61B79FD670030B2F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 114A2716469688F8E396B9C0 /* Pods.release.xcconfig */;
+			baseConfigurationReference = E1167EB68B1641C06AE721B9 /* Pods-memefication.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: David Tjokroaminoto (KNLTNXVHSU)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				GCC_PREFIX_HEADER = memefication/memefication.pch;
 				INFOPLIST_FILE = memefication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +548,7 @@
 		};
 		DC2C56B81B79FD670030B2F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE30F011E0A415FC427E6E3 /* Pods-memeficationTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: David Tjokroaminoto (KNLTNXVHSU)";
@@ -531,6 +570,7 @@
 		};
 		DC2C56B91B79FD670030B2F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A978AEF6700C32D5CB9A24B6 /* Pods-memeficationTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: David Tjokroaminoto (KNLTNXVHSU)";

@@ -12,13 +12,14 @@
 #import "MemeCreateViewController.h"
 #import "MemeHelper.h"
 
-@interface MainCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate>
+@interface MainCollectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate, UIActionSheetDelegate, UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UICollectionReusableView *collectionViewHeader;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (strong, nonatomic) NSArray *imageList;
+@property (strong, nonatomic) NSString *pageUrl;
+@property (strong, nonatomic) NSMutableArray *imageList;
 @property (strong, nonatomic) UIImage *selectedImage;
+@property (weak, nonatomic) IBOutlet UICollectionReusableView *collectionViewHeader;
 
 
 

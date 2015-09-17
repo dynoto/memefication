@@ -19,8 +19,8 @@
 + (void) updateMemeJSON;
 - (id) parseResponse:(NSData*)data;
 
-+ (NSArray*) getMemeImageList;
-+ (NSArray*) getMemeImageList:(NSString*) memeName;
++ (NSDictionary*) getMemeImageList;
++ (NSDictionary*) getMemeImageList:(NSString*)memeName pageUrl:(NSString*)pageUrl;
 + (NSArray*) getMemeLiked:(NSString*)memeId;
 + (NSArray*) getMemeLikedList:(NSString*)memeName;
 + (NSArray*) getMemeImage:(NSString*)memeId getIdOnly:(BOOL)getIdOnly;

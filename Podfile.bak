@@ -1,0 +1,19 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+use_frameworks!
+
+target ‘memefication' do
+
+pod 'THLabel', '~> 1.4.6'
+pod 'KVNProgress'
+pod 'Google-Mobile-Ads-SDK', '~> 7.0'
+pod 'SDWebImage', '~>3.7'
+
+end
+
+target ‘memeficationTests’ do
+
+pod 'SDWebImage', '~>3.7'
+
+end

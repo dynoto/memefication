@@ -7,6 +7,8 @@
 //
 
 #import "MemeCollectionViewCell.h"
+
+
 @interface MemeCollectionViewCell()
 {
             BOOL isLiked;
@@ -53,10 +55,8 @@
 }
 
 - (void)setAttributes:(NSString *)imageId imageName:(NSString *)imageName {
-    _thumbnailData = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageName]];
-    
     _memeID = imageId;
-    _memeImage.image = [[UIImage alloc] initWithData:_thumbnailData];
+    [_memeImage sd_setImageWithURL:[NSURL URLWithString:imageName]];
     _memeImage.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
 }
 

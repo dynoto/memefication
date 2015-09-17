@@ -9,7 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-memefication.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-memeficationTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0240E62ADDC9718DEBC992617DAD6866</key>
+		<key>02657E17A444D18E0E8C3D1A50705234</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>744CF7F79CB31D069D81CB51171E254A</key>
+		<key>18D6F25C23F5B64B0172955D38A8EF4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9666688CB41B38A9914616144C9C7A3E</key>
+		<key>5352D432641F0656C90741034E32F31E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A6910B4CDE7F41869E822E35BC220EE</key>
+		<key>C0212E0749A5FC46F3069BC89F87758D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0384179575F1732FC50BB55E646436F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
