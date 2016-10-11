@@ -1,6 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds" "${PODS_ROOT}/Headers/Public/KVNProgress" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/THLabel"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" -isystem "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds" -isystem "${PODS_ROOT}/Headers/Public/KVNProgress" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage" -isystem "${PODS_ROOT}/Headers/Public/THLabel"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"KVNProgress" -l"SDWebImage" -l"THLabel" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "CoreText" -framework "EventKit" -framework "EventKitUI" -framework "GLKit" -framework "GoogleMobileAds" -framework "ImageIO" -framework "MessageUI" -framework "QuartzCore" -framework "StoreKit" -framework "SystemConfiguration" -weak_framework "AdSupport"
-PODS_ROOT = ${SRCROOT}/Pods
